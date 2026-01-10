@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* So Fluent Brand Colors - From Brand Kit */
+:root {
+  /* Primary Brand Colors */
+  --sofluent-pink: #E91E63;
+  --sofluent-dark: #1A1A1A;
+  --sofluent-accent: #00BCD4;
+  
+  /* Text Colors */
+  --text-primary: #1A1A1A;
+  --text-secondary: #666666;
+  --text-light: #999999;
+  --text-white: #FFFFFF;
+  
+  /* Background Colors */
+  --bg-white: #FFFFFF;
+  --bg-light: #F8F9FA;
+  --bg-gray: #F5F5F5;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #E91E63 0%, #C2185B 100%);
+  --gradient-accent: linear-gradient(135deg, #00BCD4 0%, #0097A7 100%);
+}
+
+* {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+body {
+  background-color: var(--bg-white);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+}
+
+/* Smooth scrolling */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sofluent-pink);
+}
+
+/* Button styles */
+.btn-primary {
+  background: var(--gradient-primary);
+  color: white;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(233, 30, 99, 0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--sofluent-pink);
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: 2px solid var(--sofluent-pink);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: var(--sofluent-pink);
+  color: white;
+}
+
+/* Card styles */
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+/* Section spacing */
+.section {
+  padding: 80px 0;
+}
+
+/* Text styles */
+.text-gradient {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Rich text */
+.rich-text { font-size: 16px; color: var(--text-secondary); line-height: 1.7; }
+.rich-text p { margin-bottom: 16px; }
+.rich-text h1 { font-size: 36px; font-weight: 700; color: var(--text-primary); margin: 32px 0 16px 0; }
+.rich-text h2 { font-size: 28px; font-weight: 700; color: var(--text-primary); margin: 24px 0 12px 0; }
+.rich-text h3 { font-size: 22px; font-weight: 600; color: var(--text-primary); margin: 20px 0 10px 0; }
+.rich-text strong { font-weight: 600; color: var(--text-primary); }
+.rich-text ul, .rich-text ol { margin-left: 24px; margin-bottom: 16px; }
+.rich-text li { margin-bottom: 8px; }
+
+/* Navigation */
+.nav-link {
+  color: var(--text-primary);
+  font-weight: 500;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--sofluent-pink);
+}
+
+.nav-link.active {
+  color: var(--sofluent-pink);
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--sofluent-pink);
+  border-radius: 2px;
+}

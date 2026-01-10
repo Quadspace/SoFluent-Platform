@@ -1,0 +1,38 @@
+/* So Fluent Brand Colors */
+
+:root {
+  /* Primary Colors */
+  --sofluent-pink: #E91E63;
+  --sofluent-dark: #1A1A1A;
+  --sofluent-accent: #00BCD4;
+  
+  /* Text Colors */
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-light: #999999;
+  --text-white: #FFFFFF;
+  
+  /* Background Colors */
+  --bg-white: #FFFFFF;
+  --bg-light: #F5F5F5;
+  --bg-dark: #1A1A1A;
+  
+  /* Status Colors */
+  --success: #4CAF50;
+  --warning: #FF9800;
+  --error: #F44336;
+  --info: #2196F3;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #E91E63 0%, #C2185B 100%);
+  --gradient-accent: linear-gradient(135deg, #00BCD4 0%, #0097A7 100%);
+}
+
+/* Legacy variable names for compatibility */
+:root {
+  --primary-color: var(--sofluent-pink);
+  --secondary-color: var(--sofluent-dark);
+  --accent-color: var(--sofluent-accent);
+  --text-color: var(--text-primary);
+  --background-color: var(--bg-white);
+}

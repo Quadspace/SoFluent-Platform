@@ -1,0 +1,342 @@
+{
+  "nav": {
+    "home": "Início",
+    "courses": "Cursos",
+    "about": "Sobre",
+    "contact": "Contato",
+    "myEnrollments": "Minhas Inscrições",
+    "becomeEducator": "Tornar-se Educador",
+    "educatorDashboard": "Painel do Educador",
+    "createAccount": "Criar Conta",
+    "goProject": "Go Project"
+  },
+  "hero": {
+    "title": "Ser fluente é ser você!",
+    "titleHighlight": "Seja em português, ou em inglês.",
+    "subtitle": "Da base à fluência profissional, preparamos brasileiros para viver, trabalhar e prosperar em cenários globais– com confiança, identidade e resultados reais.",
+    "subtitleMobile": "Da base à fluência profissional, preparamos brasileiros para viver, trabalhar e prosperar em cenários globais.",
+    "subtitleDesktop": "Da base à fluência profissional, preparamos brasileiros para viver, trabalhar e prosperar em cenários globais– com confiança, identidade e resultados reais.",
+    "community": "Nossa Comunidade",
+    "cta": "Criar Conta Gratuitamente",
+    "searchPlaceholder": "Buscar cursos..."
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Ocorreu um erro",
+    "success": "Sucesso",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "view": "Visualizar",
+    "back": "Voltar",
+    "next": "Próximo",
+    "previous": "Anterior",
+    "submit": "Enviar",
+    "search": "Buscar",
+    "learnMore": "Saiba mais"
+  },
+  "courses": {
+    "title": "Cursos",
+    "allCourses": "Todos os Cursos",
+    "enroll": "Inscrever-se Agora",
+    "enrolled": "Inscrito",
+    "viewDetails": "Ver Detalhes",
+    "noCourses": "Nenhum curso encontrado",
+    "searchCourses": "Buscar cursos..."
+  },
+  "testimonials": {
+    "title": "Histórias de Sucesso",
+    "subtitle": "Ouça nossos alunos compartilhando suas jornadas de transformação, sucesso e como nossa plataforma fez a diferença em suas vidas.",
+    "readMore": "Ler história completa"
+  },
+  "about": {
+    "title": "Sobre So Fluent",
+    "subtitle": "Seja Você Mesmo em Inglês. Prospere Globalmente.",
+    "founder": {
+      "name": "Heloisa",
+      "title": "Fundadora e Instrutora Principal",
+      "bio": "Com paixão por fitness e aprendizado de idiomas, Heloisa criou So Fluent para ajudar brasileiros ambiciosos a transformarem suas carreiras através de aprendizado de inglês baseado em ciência. Sua abordagem inovadora combina atividade física com aquisição de idiomas, tornando o aprendizado 20-40% mais eficaz."
+    },
+    "mission": {
+      "title": "Nossa Missão",
+      "text": "Na So Fluent, acreditamos que aprender inglês deve ser natural, envolvente e eficaz. Nossa abordagem baseada em ciência combina fitness com aprendizado de idiomas, ajudando brasileiros ambiciosos a alcançarem fluência mais rápido enquanto se mantêm saudáveis. Não estamos apenas ensinando inglês - estamos transformando carreiras e vidas."
+    },
+    "features": {
+      "fitness": {
+        "title": "Fitness + Aprendizado",
+        "text": "Método baseado em ciência que é 20-40% mais eficaz que o aprendizado tradicional."
+      },
+      "global": {
+        "title": "Comunidade Global",
+        "text": "Junte-se a mais de 300 brasileiros ambiciosos transformando suas carreiras juntos."
+      },
+      "results": {
+        "title": "Resultados Comprovados",
+        "text": "Histórias reais de sucesso de alunos que conquistaram seus empregos dos sonhos."
+      }
+    },
+    "cta": {
+      "title": "Pronto para Transformar Sua Carreira?",
+      "subtitle": "Junte-se à So Fluent hoje e comece sua jornada para fluência e fitness.",
+      "button": "Começar Agora"
+    }
+  },
+  "footer": {
+    "about": "Sobre",
+    "contact": "Contato",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço",
+    "copyright": "© 2024 So Fluent. Todos os direitos reservados."
+  },
+  "fluencyFit": {
+    "title": "Academia Fluency Fit",
+    "subtitle": "Fique em Forma E Fluente na Metade do Tempo",
+    "description": "Aprendizado de inglês baseado em ciência através do fitness",
+    "cta": "Comece Seu Teste Gratuito de 7 Dias",
+    "hero": {
+      "title": "Fique em Forma E Fluente na Metade do Tempo",
+      "subtitle": "Aprendizado de inglês baseado em ciência através do fitness"
+    },
+    "science": {
+      "title": "20-40% Mais Eficaz",
+      "subtitle": "Pesquisa Revisada por Pares",
+      "description": "Estudos mostram que aprender enquanto se move aumenta significativamente a retenção e o engajamento."
+    },
+    "howItWorks": {
+      "title": "Como Funciona"
+    },
+    "steps": {
+      "join": {
+        "title": "Junte-se à Academia",
+        "description": "Inscreva-se e faça parte de uma comunidade de aprendizes ambiciosos"
+      },
+      "workout": {
+        "title": "Participe de Treinos ao Vivo",
+        "description": "Participe de sessões de fitness ao vivo enquanto pratica inglês"
+      },
+      "practice": {
+        "title": "Pratique Inglês",
+        "description": "Aprenda vocabulário e frases durante os treinos"
+      },
+      "transform": {
+        "title": "Transforme Sua Vida",
+        "description": "Alcance objetivos de fitness e fluência em inglês simultaneamente"
+      }
+    },
+    "pricing": {
+      "title": "Escolha Seu Plano",
+      "month": "/mês",
+      "popular": "Mais Popular",
+      "cta": "Começar",
+      "academy": {
+        "name": "Academia",
+        "feature1": "Sessões de treino ao vivo (3x/semana)",
+        "feature2": "Prática de inglês durante os treinos",
+        "feature3": "Acesso à biblioteca de treinos",
+        "feature4": "Suporte da comunidade",
+        "feature5": "Acompanhamento de progresso"
+      },
+      "vip": {
+        "name": "Círculo VIP",
+        "feature1": "Tudo da Academia",
+        "feature2": "Sessões de coaching 1:1 com Heloisa",
+        "feature3": "Plano personalizado de fitness e inglês",
+        "feature4": "Eventos VIP exclusivos",
+        "feature5": "Suporte prioritário",
+        "feature6": "Análises avançadas de progresso"
+      }
+    },
+    "successStories": {
+      "title": "Histórias de Sucesso",
+      "story1": {
+        "name": "Maria Silva",
+        "role": "Membro da Academia",
+        "quote": "A Academia Fluency Fit transformou minha vida! Perdi peso e melhorei meu inglês ao mesmo tempo."
+      },
+      "story2": {
+        "name": "João Santos",
+        "role": "Membro VIP",
+        "quote": "A combinação de fitness e aprendizado de inglês é brilhante. Nunca aprendi tão rápido!"
+      },
+      "story3": {
+        "name": "Ana Costa",
+        "role": "Membro da Academia",
+        "quote": "Melhor investimento que fiz. Minha confiança em inglês disparou junto com minha forma física."
+      }
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "q1": "Como funciona a combinação de fitness e aprendizado de inglês?",
+      "a1": "Durante as sessões de treino ao vivo, Heloisa ensina vocabulário e frases em inglês relacionadas aos movimentos de fitness, criando um ambiente de aprendizado natural que torna a retenção 20-40% mais eficaz.",
+      "q2": "Preciso estar em forma para participar?",
+      "a2": "Não! Todos os níveis de condicionamento físico são bem-vindos. Os treinos são adaptáveis ao seu nível atual de condicionamento físico.",
+      "q3": "E se eu perder uma sessão ao vivo?",
+      "a3": "Todas as sessões são gravadas e disponíveis na biblioteca de treinos para você acessar a qualquer momento.",
+      "q4": "Posso cancelar a qualquer momento?",
+      "a4": "Sim, você pode cancelar sua assinatura a qualquer momento sem penalidades."
+    },
+    "finalCta": {
+      "title": "Pronto para Transformar Sua Vida?",
+      "subtitle": "Junte-se a mais de 300 brasileiros ambiciosos transformando suas carreiras"
+    }
+  },
+  "products": {
+    "catalog": {
+      "title": "Produtos",
+      "fullTitle": "Produtos So Fluent",
+      "subtitle": "Descubra nossa gama completa de soluções de aprendizado de inglês"
+    },
+    "search": {
+      "placeholder": "Buscar produtos..."
+    },
+    "filters": {
+      "allTypes": "Todos os Tipos",
+      "allCategories": "Todas as Categorias"
+    },
+    "types": {
+      "academy": "Academia",
+      "vip": "VIP",
+      "challenge": "Desafio",
+      "course": "Curso",
+      "workshop": "Workshop",
+      "kidsCorner": "Cantinho das Crianças"
+    },
+    "categories": {
+      "fitness": "Fitness",
+      "language": "Idioma",
+      "kids": "Crianças",
+      "business": "Negócios"
+    },
+    "results": "{{count}} produtos encontrados",
+    "noResults": "Nenhum produto encontrado",
+    "tryDifferentFilters": "Tente ajustar seus filtros ou termos de busca",
+    "viewDetails": "Ver Detalhes",
+    "openClassroom": "Abrir no Google Classroom",
+    "free": "Grátis",
+    "period": {
+      "monthly": "mês",
+      "yearly": "ano"
+    },
+    "featured": "Destaque",
+    "enrolled": "inscritos",
+    "description": "Descrição",
+    "videos": "Conteúdo em Vídeo",
+    "minutes": "minutos",
+    "preview": "Prévia",
+    "courseContent": "Conteúdo do Curso",
+    "features": "O Que Está Incluído",
+    "classroom": "Google Classroom",
+    "classroomDescription": "Acesse materiais e tarefas do curso",
+    "openClassroom": "Abrir Classroom",
+    "instructor": "Instrutor",
+    "leadInstructor": "Instrutor Principal",
+    "enrollNow": "Inscrever-se Agora",
+    "enrollFree": "Inscrever-se Grátis",
+    "loginRequired": "Por favor, faça login para se inscrever",
+    "enrolled": "Inscrito com sucesso!",
+    "viewProgress": "Ver Progresso",
+    "notFound": "Produto não encontrado"
+  },
+  "workoutSchedule": {
+    "title": "Cronograma Semanal de Treinos",
+    "subtitle": "Participe de sessões de treino ao vivo e pratique inglês enquanto se exercita",
+    "note": "Todas as sessões são gravadas e disponíveis na biblioteca de treinos",
+    "noWorkouts": "Nenhum treino agendado",
+    "days": {
+      "monday": "Segunda-feira",
+      "wednesday": "Quarta-feira",
+      "friday": "Sexta-feira"
+    },
+    "types": {
+      "hiit": "Treino Intervalado de Alta Intensidade",
+      "yoga": "Yoga Flow",
+      "dance": "Dança Fitness",
+      "strength": "Treino de Força"
+    },
+    "rsvp": {
+      "button": "Confirmar",
+      "confirm": "Confirmado para"
+    }
+  },
+  "kidsCorner": {
+    "nav": "Cantinho das Crianças",
+    "hero": {
+      "title": "Cantinho das Crianças",
+      "subtitle": "Aprendizado divertido de inglês para crianças, em parceria com Red Balloon"
+    },
+    "cta": "Começar a Aprender Agora",
+    "features": {
+      "title": "Recursos de Aprendizado Divertidos",
+      "games": {
+        "title": "Missão Vocabulário",
+        "description": "Jogos divertidos para aprender vocabulário em inglês brincando"
+      },
+      "videos": {
+        "title": "Cápsulas Culturais",
+        "description": "Vídeos educativos sobre culturas de países de língua inglesa"
+      },
+      "rewards": {
+        "title": "Recompensas e Medalhas",
+        "description": "Ganhe medalhas e recompensas por aprender"
+      },
+      "safety": {
+        "title": "Seguro e Protegido",
+        "description": "Ambiente de aprendizado seguro controlado pelos pais"
+      }
+    },
+    "games": {
+      "title": "Jogos de Aprendizado",
+      "years": "anos",
+      "play": "Jogar Agora",
+      "wordMatch": {
+        "name": "Combine Palavras",
+        "description": "Combine palavras com imagens"
+      },
+      "spellQuest": {
+        "name": "Missão Ortografia",
+        "description": "Aprenda ortografia através de aventuras"
+      },
+      "pronunciation": {
+        "name": "Prática de Pronúncia",
+        "description": "Pratique pronúncia com atividades divertidas"
+      }
+    },
+    "videos": {
+      "title": "Cápsulas Culturais",
+      "duration": "5-10 min",
+      "video1": {
+        "title": "Vídeo 1: Aventura Cultural",
+        "description": "Aprenda sobre culturas de países de língua inglesa"
+      },
+      "video2": {
+        "title": "Vídeo 2: Aventura Cultural",
+        "description": "Aprenda sobre culturas de países de língua inglesa"
+      },
+      "video3": {
+        "title": "Vídeo 3: Aventura Cultural",
+        "description": "Aprenda sobre culturas de países de língua inglesa"
+      }
+    },
+    "parentDashboard": {
+      "title": "Painel dos Pais",
+      "description": "Acompanhe o progresso do seu filho, defina limites de tempo e gerencie sua jornada de aprendizado",
+      "progress": "Acompanhamento de Progresso",
+      "progressDesc": "Veja o que seu filho está aprendendo",
+      "timeLimit": "Limites de Tempo",
+      "timeLimitDesc": "Controle o tempo de tela",
+      "safety": "Conteúdo Seguro",
+      "safetyDesc": "Apenas conteúdo apropriado para a idade"
+    },
+    "finalCta": {
+      "title": "Pronto para Começar a Aprender?",
+      "subtitle": "Junte-se aos alunos da Red Balloon aprendendo inglês através de diversão e jogos"
+    }
+  },
+  "messaging": {
+    "tagline": "Seja Você Mesmo em Inglês. Prospere Globalmente.",
+    "tagline2": "Fique em Forma. Fique Fluente. Transforme Sua Vida.",
+    "effectiveness": "Aprendizado de inglês baseado em ciência que é 20-40% mais eficaz",
+    "community": "Junte-se a mais de 300 brasileiros ambiciosos transformando suas carreiras"
+  }
+}

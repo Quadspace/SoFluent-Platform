@@ -1,0 +1,340 @@
+{
+  "nav": {
+    "home": "Home",
+    "courses": "Courses",
+    "about": "About",
+    "contact": "Contact",
+    "myEnrollments": "My Enrollments",
+    "becomeEducator": "Become Educator",
+    "educatorDashboard": "Educator Dashboard",
+    "createAccount": "Create Account",
+    "goProject": "Go Project"
+  },
+  "hero": {
+    "title": "Be Yourself in English. Prosper Globally.",
+    "titleHighlight": "to fit your choice.",
+    "subtitle": "Transform your career with science-backed English learning",
+    "subtitleMobile": "We bring together world-class instructors to help you achieve your professional goals.",
+    "subtitleDesktop": "We bring together world-class instructors, interactive content, and a supportive community to help you achieve your personal and professional goals.",
+    "searchPlaceholder": "Search for courses..."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "search": "Search",
+    "learnMore": "Learn more"
+  },
+  "courses": {
+    "title": "Courses",
+    "allCourses": "All Courses",
+    "enroll": "Enroll Now",
+    "enrolled": "Enrolled",
+    "viewDetails": "View Details",
+    "noCourses": "No courses found",
+    "searchCourses": "Search courses..."
+  },
+  "testimonials": {
+    "title": "Success Stories",
+    "subtitle": "Hear from our learners as they share their journeys of transformation, success, and how our platform has made a difference in their lives.",
+    "readMore": "Read full story"
+  },
+  "about": {
+    "title": "About So Fluent",
+    "subtitle": "Be Yourself in English. Prosper Globally.",
+    "founder": {
+      "name": "Heloisa",
+      "title": "Founder & Lead Instructor",
+      "bio": "With a passion for both fitness and language learning, Heloisa created So Fluent to help ambitious Brazilians transform their careers through science-backed English learning. Her innovative approach combines physical activity with language acquisition, making learning 20-40% more effective."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text": "At So Fluent, we believe that learning English should be natural, engaging, and effective. Our science-backed approach combines fitness with language learning, helping ambitious Brazilians achieve fluency faster while staying healthy. We're not just teaching English - we're transforming careers and lives."
+    },
+    "features": {
+      "fitness": {
+        "title": "Fitness + Learning",
+        "text": "Science-backed method that's 20-40% more effective than traditional learning."
+      },
+      "global": {
+        "title": "Global Community",
+        "text": "Join 300+ ambitious Brazilians transforming their careers together."
+      },
+      "results": {
+        "title": "Proven Results",
+        "text": "Real success stories from students who landed their dream jobs."
+      }
+    },
+    "cta": {
+      "title": "Ready to Transform Your Career?",
+      "subtitle": "Join So Fluent today and start your journey to fluency and fitness.",
+      "button": "Get Started"
+    }
+  },
+  "footer": {
+    "about": "About",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "© 2024 So Fluent. All rights reserved."
+  },
+  "fluencyFit": {
+    "title": "Fluency Fit Academy",
+    "subtitle": "Get Fit AND Fluent in Half the Time",
+    "description": "Science-backed English learning through fitness",
+    "cta": "Start Your Free 7-Day Trial",
+    "hero": {
+      "title": "Get Fit AND Fluent in Half the Time",
+      "subtitle": "Science-backed English learning through fitness"
+    },
+    "science": {
+      "title": "20-40% More Effective",
+      "subtitle": "Peer-Reviewed Research",
+      "description": "Studies show that learning while moving increases retention and engagement significantly."
+    },
+    "howItWorks": {
+      "title": "How It Works"
+    },
+    "steps": {
+      "join": {
+        "title": "Join the Academy",
+        "description": "Sign up and become part of a community of ambitious learners"
+      },
+      "workout": {
+        "title": "Join Live Workouts",
+        "description": "Participate in live fitness sessions while practicing English"
+      },
+      "practice": {
+        "title": "Practice English",
+        "description": "Learn vocabulary and phrases during workouts"
+      },
+      "transform": {
+        "title": "Transform Your Life",
+        "description": "Achieve fitness goals and English fluency simultaneously"
+      }
+    },
+    "pricing": {
+      "title": "Choose Your Plan",
+      "month": "/month",
+      "popular": "Most Popular",
+      "cta": "Get Started",
+      "academy": {
+        "name": "Academy",
+        "feature1": "Live workout sessions (3x/week)",
+        "feature2": "English practice during workouts",
+        "feature3": "Access to workout library",
+        "feature4": "Community support",
+        "feature5": "Progress tracking"
+      },
+      "vip": {
+        "name": "VIP Circle",
+        "feature1": "Everything in Academy",
+        "feature2": "1:1 coaching sessions with Heloisa",
+        "feature3": "Personalized fitness & English plan",
+        "feature4": "Exclusive VIP events",
+        "feature5": "Priority support",
+        "feature6": "Advanced progress analytics"
+      }
+    },
+    "successStories": {
+      "title": "Success Stories",
+      "story1": {
+        "name": "Maria Silva",
+        "role": "Academy Member",
+        "quote": "Fluency Fit Academy transformed my life! I lost weight and improved my English at the same time."
+      },
+      "story2": {
+        "name": "João Santos",
+        "role": "VIP Member",
+        "quote": "The combination of fitness and English learning is brilliant. I've never learned so fast!"
+      },
+      "story3": {
+        "name": "Ana Costa",
+        "role": "Academy Member",
+        "quote": "Best investment I've made. My confidence in English has skyrocketed along with my fitness."
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": "How does combining fitness and English learning work?",
+      "a1": "During live workout sessions, Heloisa teaches English vocabulary and phrases related to fitness movements, creating a natural learning environment that makes retention 20-40% more effective.",
+      "q2": "Do I need to be fit to join?",
+      "a2": "No! All fitness levels are welcome. Workouts are adaptable to your current fitness level.",
+      "q3": "What if I miss a live session?",
+      "a3": "All sessions are recorded and available in the workout library for you to access anytime.",
+      "q4": "Can I cancel anytime?",
+      "a4": "Yes, you can cancel your subscription at any time with no penalties."
+    },
+    "finalCta": {
+      "title": "Ready to Transform Your Life?",
+      "subtitle": "Join 300+ ambitious Brazilians transforming their careers"
+    }
+  },
+  "products": {
+    "catalog": {
+      "title": "Products",
+      "fullTitle": "So Fluent Products",
+      "subtitle": "Discover our complete range of English learning solutions"
+    },
+    "search": {
+      "placeholder": "Search products..."
+    },
+    "filters": {
+      "allTypes": "All Types",
+      "allCategories": "All Categories"
+    },
+    "types": {
+      "academy": "Academy",
+      "vip": "VIP",
+      "challenge": "Challenge",
+      "course": "Course",
+      "workshop": "Workshop",
+      "kidsCorner": "Kids' Corner"
+    },
+    "categories": {
+      "fitness": "Fitness",
+      "language": "Language",
+      "kids": "Kids",
+      "business": "Business"
+    },
+    "results": "{{count}} products found",
+    "noResults": "No products found",
+    "tryDifferentFilters": "Try adjusting your filters or search terms",
+    "viewDetails": "View Details",
+    "openClassroom": "Open in Google Classroom",
+    "free": "Free",
+    "period": {
+      "monthly": "month",
+      "yearly": "year"
+    },
+    "featured": "Featured",
+    "enrolled": "enrolled",
+    "description": "Description",
+    "videos": "Video Content",
+    "minutes": "minutes",
+    "preview": "Preview",
+    "courseContent": "Course Content",
+    "features": "What's Included",
+    "classroom": "Google Classroom",
+    "classroomDescription": "Access course materials and assignments",
+    "openClassroom": "Open Classroom",
+    "instructor": "Instructor",
+    "leadInstructor": "Lead Instructor",
+    "enrollNow": "Enroll Now",
+    "enrollFree": "Enroll Free",
+    "loginRequired": "Please login to enroll",
+    "enrolled": "Successfully enrolled!",
+    "viewProgress": "View Progress",
+    "notFound": "Product not found"
+  },
+  "workoutSchedule": {
+    "title": "Weekly Workout Schedule",
+    "subtitle": "Join live workout sessions and practice English while getting fit",
+    "note": "All sessions are recorded and available in the workout library",
+    "noWorkouts": "No workouts scheduled",
+    "days": {
+      "monday": "Monday",
+      "wednesday": "Wednesday",
+      "friday": "Friday"
+    },
+    "types": {
+      "hiit": "High Intensity Interval Training",
+      "yoga": "Yoga Flow",
+      "dance": "Dance Fitness",
+      "strength": "Strength Training"
+    },
+    "rsvp": {
+      "button": "RSVP",
+      "confirm": "RSVP confirmed for"
+    }
+  },
+  "kidsCorner": {
+    "nav": "Kids' Corner",
+    "hero": {
+      "title": "Kids' Corner",
+      "subtitle": "Fun English learning for kids, powered by Red Balloon"
+    },
+    "cta": "Start Learning Now",
+    "features": {
+      "title": "Fun Learning Features",
+      "games": {
+        "title": "Vocabulary Quest",
+        "description": "Fun games to learn English vocabulary through play"
+      },
+      "videos": {
+        "title": "Culture Capsules",
+        "description": "Educational videos about English-speaking cultures"
+      },
+      "rewards": {
+        "title": "Rewards & Badges",
+        "description": "Earn badges and rewards for learning"
+      },
+      "safety": {
+        "title": "Safe & Secure",
+        "description": "Parent-controlled safe learning environment"
+      }
+    },
+    "games": {
+      "title": "Learning Games",
+      "years": "years",
+      "play": "Play Now",
+      "wordMatch": {
+        "name": "Word Match",
+        "description": "Match words with pictures"
+      },
+      "spellQuest": {
+        "name": "Spell Quest",
+        "description": "Learn spelling through adventure"
+      },
+      "pronunciation": {
+        "name": "Pronunciation Practice",
+        "description": "Practice pronunciation with fun activities"
+      }
+    },
+    "videos": {
+      "title": "Culture Capsules",
+      "duration": "5-10 min",
+      "video1": {
+        "title": "Video 1: Cultural Adventure",
+        "description": "Learn about English-speaking cultures"
+      },
+      "video2": {
+        "title": "Video 2: Cultural Adventure",
+        "description": "Learn about English-speaking cultures"
+      },
+      "video3": {
+        "title": "Video 3: Cultural Adventure",
+        "description": "Learn about English-speaking cultures"
+      }
+    },
+    "parentDashboard": {
+      "title": "Parent Dashboard",
+      "description": "Track your child's progress, set time limits, and manage their learning journey",
+      "progress": "Progress Tracking",
+      "progressDesc": "See what your child is learning",
+      "timeLimit": "Time Limits",
+      "timeLimitDesc": "Control screen time",
+      "safety": "Safe Content",
+      "safetyDesc": "Age-appropriate content only"
+    },
+    "finalCta": {
+      "title": "Ready to Start Learning?",
+      "subtitle": "Join Red Balloon students learning English through fun and games"
+    }
+  },
+  "messaging": {
+    "tagline": "Be Yourself in English. Prosper Globally.",
+    "tagline2": "Get Fit. Get Fluent. Transform Your Life.",
+    "effectiveness": "Science-backed English learning that's 20-40% more effective",
+    "community": "Join 300+ ambitious Brazilians transforming their careers"
+  }
+}
