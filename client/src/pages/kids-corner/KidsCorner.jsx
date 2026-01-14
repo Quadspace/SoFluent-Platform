@@ -12,8 +12,8 @@ import {
   PlayCircle,
   Users
 } from 'lucide-react';
-import Navbar from '../../components/student/Navbar';
-import Footer from '../../components/student/Footer';
+import StandardPage from '../../utils/pageConsistency';
+import BrandText from '../../components/common/BrandText';
 
 const KidsCorner = () => {
   const { t } = useTranslation();
@@ -67,8 +67,11 @@ const KidsCorner = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar />
+    <StandardPage
+      seoTitle="Kids' Corner - So Fluent"
+      seoDescription="Fun English learning for kids"
+      background="bg-white"
+    >
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-yellow-100 via-blue-100 to-purple-100 py-20 md:py-32">
@@ -261,9 +264,7 @@ const KidsCorner = () => {
           </motion.div>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </StandardPage>
   );
 };
 

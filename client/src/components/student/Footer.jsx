@@ -1,119 +1,134 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Instagram, Youtube, Linkedin, Mail, ArrowRight } from "lucide-react";
+import SocialIcons from "../SocialIcons";
+import { Mail, Send, ArrowRight } from "lucide-react";
+import { brandAssets } from "../../assets/branding/brand-assets";
 
 const Footer = () => {
 	const { t } = useTranslation();
 	const [subscribeEmail, setSubscribeEmail] = useState("");
 
 	const handleSubscribe = () => {
-		alert(`Inscrito com: ${subscribeEmail}`);
+		// TODO: Replace this with your subscription API integration
+		alert(`Subscribed with: ${subscribeEmail}`);
 		setSubscribeEmail("");
 	};
 
-	const footerLinks = {
-		students: [
-			{ name: 'Dashboard', path: '/dashboard' },
-			{ name: 'Membros', path: '/membros' },
-			{ name: 'Orders', path: '/orders' },
-			{ name: 'Account details', path: '/account' },
-		],
-		quickLinks: [
-			{ name: 'Sobre Nós', path: '/about' },
-			{ name: 'Contact us', path: '/contact' },
-			{ name: 'Privacy Policy', path: '/privacy-policy' },
-			{ name: 'Shop', path: '/products' },
-		],
-	};
-
-	const socialLinks = [
-		{ icon: <Instagram className="w-5 h-5" />, url: 'https://instagram.com/sofluent', label: 'Instagram' },
-		{ icon: <Youtube className="w-5 h-5" />, url: 'https://youtube.com/sofluent', label: 'YouTube' },
-		{ icon: <Linkedin className="w-5 h-5" />, url: 'https://linkedin.com/company/sofluent', label: 'LinkedIn' },
-	];
-
 	return (
-		<footer className="bg-[#1A1A1A] text-white">
-			{/* Main Footer */}
-			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+		<footer className="bg-[#1A1A1A] text-left w-full border-t border-white/10">
+			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
 					{/* Brand Column */}
-					<div>
-						<Link to="/" className="inline-block mb-4">
-							<span className="text-2xl font-bold text-white">
-								So<span className="text-[#E91E63]">Fluent</span>
-							</span>
-						</Link>
-						<p className="text-gray-400 text-sm mb-4">
-							So Fluent LLC is a dynamic, virtual institute committed to empowering Brazilian professionals around the globe to master professional English.
+					<div className="flex flex-col">
+						<div className="mb-6">
+							<img 
+								src={brandAssets.logos.white} 
+								alt="So Fluent Logo" 
+								className="h-12 w-auto mb-6"
+							/>
+						</div>
+						<p className="text-gray-400 mb-6 leading-relaxed text-base">
+							{t('messaging.tagline')}. {t('messaging.effectiveness')}
 						</p>
+						<SocialIcons />
 					</div>
 
-					{/* Students Links */}
-					<div>
-						<h3 className="font-semibold text-white mb-4">Students</h3>
-						<ul className="space-y-2">
-							{footerLinks.students.map((link) => (
-								<li key={link.path}>
-									<Link
-										to={link.path}
-										className="text-gray-400 hover:text-white text-sm transition-colors"
-									>
-										{link.name}
-									</Link>
-								</li>
-							))}
+					{/* Links Column */}
+					<div className="flex flex-col">
+						<h3 className="font-bold text-white mb-6 text-lg">Empresa</h3>
+						<ul className="space-y-3">
+							<li>
+								<Link to="/" className="text-gray-400 hover:text-[#E91E63] transition-colors text-base">
+									{t('nav.home')}
+								</Link>
+							</li>
+							<li>
+								<Link to="/about" className="text-gray-400 hover:text-[#E91E63] transition-colors text-base">
+									{t('nav.about')}
+								</Link>
+							</li>
+							<li>
+								<Link to="/contact" className="text-gray-400 hover:text-[#E91E63] transition-colors text-base">
+									{t('nav.contact')}
+								</Link>
+							</li>
+							<li>
+								<Link to="/privacy-policy" className="text-gray-400 hover:text-[#E91E63] transition-colors text-base">
+									{t('footer.privacy')}
+								</Link>
+							</li>
 						</ul>
 					</div>
 
-					{/* Links rápidos */}
-					<div>
-						<h3 className="font-semibold text-white mb-4">Links rápidos</h3>
-						<ul className="space-y-2">
-							{footerLinks.quickLinks.map((link) => (
-								<li key={link.path}>
-									<Link
-										to={link.path}
-										className="text-gray-400 hover:text-white text-sm transition-colors"
-									>
-										{link.name}
-									</Link>
-								</li>
-							))}
+					{/* Quick Links - Enhanced with Academy Prominence */}
+					<div className="flex flex-col">
+						<h3 className="font-bold text-white mb-6 text-lg">Links Rápidos</h3>
+						<ul className="space-y-3">
+							<li>
+								<Link 
+									to="/fluency-fit" 
+									className="group flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#E91E63]/20 to-[#D4AF37]/20 border border-[#E91E63]/30 rounded-lg hover:from-[#E91E63]/30 hover:to-[#D4AF37]/30 transition-all"
+								>
+									<span className="text-white font-bold text-base group-hover:text-[#D4AF37] transition-colors">
+										{t('nav.fluencyFit', 'Fluency Fit Academy')}
+									</span>
+									<span className="px-2 py-0.5 bg-[#D4AF37] text-[#1A1A1A] text-xs font-black rounded-full">
+										HOT
+									</span>
+									<ArrowRight className="w-4 h-4 text-[#E91E63] group-hover:translate-x-1 transition-transform" />
+								</Link>
+							</li>
+							<li>
+								<Link to="/course-list" className="text-gray-400 hover:text-[#E91E63] transition-colors text-base">
+									Cursos
+								</Link>
+							</li>
+							<li>
+								<Link to="/products" className="text-gray-400 hover:text-[#E91E63] transition-colors text-base">
+									Produtos
+								</Link>
+							</li>
+							<li>
+								<Link to="/pricing" className="text-gray-400 hover:text-[#E91E63] transition-colors text-base">
+									{t('nav.pricing', 'Pricing')}
+								</Link>
+							</li>
 						</ul>
 					</div>
 
-					{/* Newsletter */}
-					<div>
-						<h3 className="font-semibold text-white mb-4">Newsletter</h3>
-						<p className="text-gray-400 text-sm mb-4">
-							Assine nossa newsletter para ter acesso aos nossos conteúdos. Insira seu email para se inscrever.
+					{/* Newsletter Column */}
+					<div className="flex flex-col">
+						<h3 className="font-bold text-white mb-6 text-lg flex items-center gap-2">
+							<Mail className="w-5 h-5 text-[#E91E63]" />
+							Newsletter
+						</h3>
+						<p className="text-gray-400 mb-6 text-sm leading-relaxed">
+							Receba as últimas notícias, artigos e recursos diretamente na sua caixa de entrada.
 						</p>
-						<div className="flex flex-col gap-2">
+						<div className="flex flex-col sm:flex-row gap-3">
 							<input
 								type="email"
-								placeholder="Enter Your Email Address"
-								className="bg-white/10 border border-white/20 rounded px-4 py-2 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-[#E91E63]"
+								placeholder="Seu email"
+								className="flex-1 px-5 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#E91E63] transition-all text-base"
 								value={subscribeEmail}
 								onChange={(e) => setSubscribeEmail(e.target.value)}
 							/>
 							<button
 								onClick={handleSubscribe}
-								className="btn-primary flex items-center justify-center gap-2 text-sm py-2 w-full"
+								className="px-6 py-3 bg-gradient-to-r from-[#E91E63] to-[#C2185B] text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-[#E91E63]/50 transition-all flex items-center justify-center gap-2"
 							>
-								Inscreva-se <ArrowRight className="w-4 h-4" />
+								<Send className="w-4 h-4" />
+								Inscrever
 							</button>
 						</div>
 					</div>
 				</div>
-			</div>
 
-			{/* Bottom Bar */}
-			<div className="border-t border-white/10">
-				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-					<p className="text-center text-gray-400 text-sm">
-						© 2025 SoFluent.ai feito por Tomada Digital. Todos os direitos reservados.
+				{/* Bottom Bar */}
+				<div className="pt-8 border-t border-white/10">
+					<p className="text-center text-sm text-gray-500">
+						{t('footer.copyright', '© 2026 So Fluent. Todos os direitos reservados.')}
 					</p>
 				</div>
 			</div>

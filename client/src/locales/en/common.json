@@ -1,21 +1,31 @@
 {
   "nav": {
     "home": "Home",
-    "courses": "Courses",
-    "about": "About",
-    "contact": "Contact",
+    "myEnglishJourney": "My English Journey",
+    "soFluentTalks": "So Fluent Talks",
+    "fluencyFit": "Fluency Fit Academy",
+    "espCourses": "ESP Courses",
+    "courses": "Our Courses",
+    "pricing": "Pricing",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "members": "Members",
     "myEnrollments": "My Enrollments",
+    "dashboard": "Dashboard",
     "becomeEducator": "Become Educator",
     "educatorDashboard": "Educator Dashboard",
     "createAccount": "Create Account",
+    "login": "Login",
     "goProject": "Go Project"
   },
   "hero": {
-    "title": "Be Yourself in English. Prosper Globally.",
-    "titleHighlight": "to fit your choice.",
+    "title": "Being fluent is being yourself!",
+    "titleHighlight": "Whether in Portuguese or English.",
+    "vision": "Communicate with the same fluency and confidence as Portuguese",
     "subtitle": "Transform your career with science-backed English learning",
     "subtitleMobile": "We bring together world-class instructors to help you achieve your professional goals.",
-    "subtitleDesktop": "We bring together world-class instructors, interactive content, and a supportive community to help you achieve your personal and professional goals.",
+    "subtitleDesktop": "From basics to professional fluency, we prepare Brazilians to live, work and prosper in global scenarios – with confidence, identity and real results.",
+    "diaspora": "For Brazilians in Brazil, US, Canada, Portugal and beyond • Intermediate to Advanced Levels (B1+)",
     "searchPlaceholder": "Search for courses..."
   },
   "common": {
@@ -51,11 +61,20 @@
   "about": {
     "title": "About So Fluent",
     "subtitle": "Be Yourself in English. Prosper Globally.",
+    "team": {
+      "title": "Our Team",
+      "founder": "Founder",
+      "instructor": "Lead Instructor",
+      "support": "Support Team"
+    },
     "founder": {
       "name": "Heloisa",
       "title": "Founder & Lead Instructor",
-      "bio": "With a passion for both fitness and language learning, Heloisa created So Fluent to help ambitious Brazilians transform their careers through science-backed English learning. Her innovative approach combines physical activity with language acquisition, making learning 20-40% more effective."
+      "bio": "With a passion for both fitness and language learning, Heloisa created So Fluent to help ambitious Brazilians transform their careers through science-backed English learning. Her innovative approach combines physical activity with language acquisition, making learning 20-40% more effective.",
+      "representation": "Leading with Representation and Excellence",
+      "representationDesc": "As a school led by a Black woman, So Fluent values diversity and seeks to reflect this in our practices and materials, creating a space where all Brazilians can thrive."
     },
+    "representation": "⭐ Led by Black Woman",
     "mission": {
       "title": "Our Mission",
       "text": "At So Fluent, we believe that learning English should be natural, engaging, and effective. Our science-backed approach combines fitness with language learning, helping ambitious Brazilians achieve fluency faster while staying healthy. We're not just teaching English - we're transforming careers and lives."
@@ -336,5 +355,365 @@
     "tagline2": "Get Fit. Get Fluent. Transform Your Life.",
     "effectiveness": "Science-backed English learning that's 20-40% more effective",
     "community": "Join 300+ ambitious Brazilians transforming their careers"
+  },
+  "methodology": {
+    "recorded": {
+      "title": "Recorded Courses",
+      "description": "Asynchronous lessons can be accessed anytime and as many times as you need. All include subtitles and extra practice materials with answer keys, ensuring clarity and autonomy in studies."
+    },
+    "live": {
+      "title": "Live Classes",
+      "description": "Real-time practice is essential. Whether in dynamic groups or private classes, you exercise your skills, receive immediate feedback and maintain motivation to advance with confidence."
+    },
+    "virtual": {
+      "title": "Virtual Classroom",
+      "description": "Our platform organizes everything in one place — materials, lessons, additional resources and gamified activities. Additionally, you interact with a community of students who share the same learning journey."
+    }
+  },
+  "pricing": {
+    "title": "Choose Your Plan",
+    "subtitle": "Personalized pricing for your market",
+    "locationNote": "Prices automatically adjusted for your market",
+    "mostPopular": "⭐ MOST POPULAR",
+    "free": {
+      "name": "Free",
+      "feature1": "Community access",
+      "feature2": "1 recorded course",
+      "feature3": "Practice resources",
+      "feature4": "Weekly newsletter",
+      "cta": "Create Free Account"
+    },
+    "academy": {
+      "name": "Fluency Fit Academy",
+      "feature1": "Everything in Free, plus:",
+      "feature2": "3x/week live classes (fitness + English)",
+      "feature3": "All recorded courses",
+      "feature4": "Unlimited platform access",
+      "feature5": "Exclusive community",
+      "feature6": "Completion certificate",
+      "cta": "Start Now"
+    },
+    "vip": {
+      "name": "VIP 1:1 Coaching",
+      "feature1": "Everything in Academy, plus:",
+      "feature2": "4x/month private sessions with Heloisa",
+      "feature3": "Personalized study plan",
+      "feature4": "Detailed weekly feedback",
+      "feature5": "Interview preparation",
+      "feature6": "Priority support",
+      "cta": "Schedule Consultation"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": "Why are prices different by region?",
+      "a1": "We adjust our prices to be fair and accessible in each market, considering local purchasing power and economic conditions.",
+      "q2": "Can I change plans anytime?",
+      "a2": "Yes! You can upgrade or downgrade at any time. Changes will be applied to your next billing cycle.",
+      "q3": "Is there a free trial?",
+      "a3": "Yes! The Free plan offers full community access and 1 course. Academy offers 7 days free for new members."
+    }
+  },
+  "esp": {
+    "title": "English for Specific Purposes",
+    "subtitle": "Specialized English courses for professionals. Learn the English you need for your specific field.",
+    "cta": "View Available Courses",
+    "whatIsESP": {
+      "title": "What is ESP?",
+      "description": "English for Specific Purposes (ESP) is an English teaching approach focused on the specific needs of professionals in different fields. Instead of learning general English, you learn the vocabulary, structures and communication skills needed for your profession.",
+      "benefit1Title": "Practical Focus",
+      "benefit1Desc": "Learn only what you need for your professional field.",
+      "benefit2Title": "Immediate Application",
+      "benefit2Desc": "Use the English you learn directly in your work.",
+      "benefit3Title": "Fast Results",
+      "benefit3Desc": "See faster progress by focusing on your area.",
+      "benefit4Title": "Personalized",
+      "benefit4Desc": "Courses tailored to the specific needs of your profession."
+    },
+    "categoriesTitle": "Available Categories",
+    "medical": {
+      "title": "Medical English",
+      "description": "English for healthcare professionals, doctors, nurses and medical students.",
+      "feature1": "Medical terminology",
+      "feature2": "Patient communication",
+      "feature3": "Clinical documentation",
+      "feature4": "Medical presentations"
+    },
+    "tech": {
+      "title": "Tech English",
+      "description": "English for software developers, engineers and tech professionals.",
+      "feature1": "Technical documentation",
+      "feature2": "Code reviews & discussions",
+      "feature3": "Tech presentations",
+      "feature4": "Agile & Scrum terminology"
+    },
+    "business": {
+      "title": "Business English",
+      "description": "English for executives, managers and business professionals.",
+      "feature1": "Business presentations",
+      "feature2": "Negotiations & meetings",
+      "feature3": "Email & correspondence",
+      "feature4": "Business writing"
+    },
+    "academic": {
+      "title": "Academic English",
+      "description": "English for students, researchers and academics.",
+      "feature1": "Academic writing",
+      "feature2": "Research presentations",
+      "feature3": "Thesis & dissertation",
+      "feature4": "Academic discussions"
+    },
+    "legal": {
+      "title": "Legal English",
+      "description": "English for lawyers, paralegals and legal professionals.",
+      "feature1": "Legal terminology",
+      "feature2": "Contract writing",
+      "feature3": "Courtroom English",
+      "feature4": "Legal research"
+    },
+    "science": {
+      "title": "Scientific English",
+      "description": "English for scientists, researchers and lab professionals.",
+      "feature1": "Scientific writing",
+      "feature2": "Research papers",
+      "feature3": "Lab reports",
+      "feature4": "Scientific presentations"
+    },
+    "custom": {
+      "title": "Need a Custom Course?",
+      "description": "Didn't find a course for your field? Contact us and we'll create a personalized ESP course for you or your company.",
+      "cta": "Request Custom Course"
+    }
+  },
+  "criticalThinking": {
+    "badge": "Methodology",
+    "title": "CRITICAL THINKING",
+    "titleHighlight": "IN LEARNING",
+    "subtitle": "We don't just teach English - we teach you to think critically about language, culture and power.",
+    "question": {
+      "title": "Question Assumptions",
+      "description": "We challenge linguistic myths and fads. We don't accept \"it's this way because it's always been this way\". We question why and for whom something is relevant."
+    },
+    "context": {
+      "title": "Contextualize Cultural Practices",
+      "description": "We explain the historical and cultural context behind English language practices. We understand where the rules come from and for whom they were created."
+    },
+    "power": {
+      "title": "Reflect on Power and Privilege",
+      "description": "We recognize that language carries power and privilege. We discuss how English can be used for inclusion or exclusion, and how you can consciously decide how you want to use English."
+    },
+    "sources": {
+      "title": "Compare Sources",
+      "description": "We encourage you to compare different sources, question linguistic authorities and form your own opinions based on evidence."
+    },
+    "identity": {
+      "title": "Maintain Your Identity",
+      "description": "We believe that learning English doesn't mean losing your Brazilian identity. You can be fluent in English and still be completely yourself."
+    },
+    "conscious": {
+      "title": "Conscious Decision",
+      "description": "You consciously decide how you want to use English in your life and work. We don't impose standards - you choose what works for you."
+    },
+    "whyMatters": {
+      "title": "Why Does This Matter?",
+      "description": "Learning English without critical thinking can lead to loss of cultural identity and passive acceptance of norms that don't serve your interests. With critical thinking, you learn English while maintaining your Brazilian identity, questioning what doesn't make sense and consciously deciding how you want to use the language for your own goals."
+    },
+    "cta": "Join a community that values critical thinking, cultural identity and conscious learning."
+  },
+  "social": {
+    "createPost": "Create Post",
+    "text": "Text",
+    "voice": "Voice",
+    "photo": "Photo",
+    "video": "Video",
+    "shareYourEnglish": "Share your English practice in English...",
+    "startRecording": "Start Recording",
+    "stopRecording": "Stop Recording",
+    "recording": "Recording...",
+    "audioReady": "Audio ready!",
+    "recordAgain": "Record again",
+    "changeFile": "Change file",
+    "selectFile": "Select file",
+    "posting": "Posting...",
+    "post": "Post",
+    "like": "Like",
+    "comment": "Comment",
+    "share": "Share",
+    "save": "Save",
+    "comments": "Comments",
+    "addComment": "Add a comment...",
+    "postComment": "Post Comment",
+    "featured": "Featured by Heloisa",
+    "communityFeed": "Community Feed",
+    "yourStreak": "Your Streak: {{days}} days",
+    "communityChallenge": "Community Challenge: 30-Day English Streak"
+  },
+  "missions": {
+    "title": "Real-World Missions",
+    "subtitle": "Complete daily challenges, upload proof, earn XP, and level up!",
+    "completed": "Completed!",
+    "enterProof": "Enter your proof...",
+    "submit": "Submit Proof",
+    "submitting": "Submitting...",
+    "xpReward": "+{{xp}} XP",
+    "completionCount": "{{count}} completed"
+  },
+  "workouts": {
+    "title": "Workout-to-Fluency™",
+    "subtitle": "Get Fit. Get Fluent. Transform Your Life.",
+    "scienceBacked": "🧠 Science-Backed: 20-40% Faster Learning",
+    "upcomingClasses": "Upcoming Live Classes",
+    "onDemand": "On-Demand Workouts",
+    "joinNow": "Join Now",
+    "startsIn": "Starts soon",
+    "all": "All",
+    "hiit": "HIIT",
+    "yoga": "Yoga",
+    "strength": "Strength"
+  },
+  "aiLifeMirror": {
+    "title": "AI Life Mirror™",
+    "subtitle": "Learn English from YOUR life. AI creates personalized lessons from your Instagram and LinkedIn.",
+    "myLessons": "My Life Lessons",
+    "generateMore": "Generate More Lessons",
+    "generating": "Generating...",
+    "noLessons": "No lessons yet. Generate your first personalized lesson!",
+    "generateFirst": "Generate First Lesson",
+    "vocabulary": "Vocabulary from YOUR life:",
+    "completed": "Completed",
+    "complete": "complete",
+    "startLearning": "Start Learning"
+  },
+  "career": {
+    "title": "Career English Accelerator™",
+    "subtitle": "Master English for YOUR career. Personalized lessons based on your LinkedIn profile.",
+    "connectLinkedIn": "Connect Your LinkedIn",
+    "connectDescription": "We'll analyze your job title, industry, and experience to create personalized English lessons for your career.",
+    "connect": "Connect LinkedIn",
+    "myLessons": "My Career Lessons",
+    "generateLessons": "Generate Lessons",
+    "generating": "Generating...",
+    "noLessons": "No career lessons yet. Generate your first personalized lesson!",
+    "startLearning": "Start Learning"
+  },
+  "conversation": {
+    "title": "AI Conversation Partner",
+    "subtitle": "Practice English 24/7 with AI",
+    "newChat": "New Chat",
+    "typeMessage": "Type your message in English...",
+    "send": "Send"
+  },
+  "pronunciation": {
+    "title": "AI Pronunciation Coach™",
+    "subtitle": "Get real-time feedback on your pronunciation. Practice makes perfect!",
+    "practicePhrase": "Practice This Phrase",
+    "enterPhrase": "Enter phrase to practice...",
+    "startRecording": "Start Recording",
+    "stopRecording": "Stop Recording",
+    "analyzing": "Analyzing your pronunciation...",
+    "results": "Your Results",
+    "strengths": "Strengths:",
+    "improvements": "Areas to Improve:",
+    "recentPractice": "Recent Practice",
+    "attempts": "attempts"
+  },
+  "studyBuddy": {
+    "title": "Smart Study Buddy™",
+    "subtitle": "Never forget a word again. Spaced repetition system powered by science.",
+    "totalWords": "Total Words",
+    "mastered": "Mastered",
+    "learning": "Learning",
+    "dueReview": "Due Review",
+    "showAnswer": "Show Answer",
+    "howWell": "How well did you remember this word?",
+    "noWords": "No words due for review! Great job! 🎉",
+    "addWord": "Add New Word"
+  },
+  "successStory": {
+    "title": "Success Story Generator™",
+    "subtitle": "Celebrate your journey! Generate a shareable video of your English learning success.",
+    "createNew": "Create Your Success Story",
+    "template": "Template",
+    "journey": "Journey",
+    "achievement": "Achievement",
+    "motivational": "Motivational",
+    "transformation": "Transformation",
+    "music": "Music",
+    "default": "Default",
+    "upbeat": "Upbeat",
+    "inspiring": "Inspiring",
+    "generating": "Generating Your Story...",
+    "generate": "Generate Success Story",
+    "myStories": "My Success Stories",
+    "days": "days",
+    "courses": "Courses",
+    "streak": "Streak",
+    "watch": "Watch",
+    "share": "Share"
+  },
+  "dashboard": {
+    "features": {
+      "title": "Your Learning Tools",
+      "subtitle": "9 breakthrough features",
+      "aiLifeMirror": "AI Life Mirror",
+      "aiLifeMirrorDesc": "Learn from YOUR Instagram",
+      "missions": "Real-World Missions",
+      "missionsDesc": "Complete challenges, earn XP",
+      "workouts": "Workout-to-Fluency",
+      "workoutsDesc": "Get fit, get fluent",
+      "career": "Career Accelerator",
+      "careerDesc": "Master career English",
+      "conversation": "AI Conversation",
+      "conversationDesc": "Practice 24/7",
+      "pronunciation": "Pronunciation Coach",
+      "pronunciationDesc": "Perfect your accent",
+      "studyBuddy": "Smart Study Buddy",
+      "studyBuddyDesc": "Never forget a word",
+      "successStory": "Success Story",
+      "successStoryDesc": "Share your journey",
+      "feed": "Community Feed",
+      "feedDesc": "Connect with learners"
+    }
+  },
+  "nav": {
+    "leaderboard": "Leaderboard"
+  },
+  "commandPalette": {
+    "searchPlaceholder": "Search or type a command...",
+    "noResults": "No results found.",
+    "viewAnalytics": "View Analytics Dashboard",
+    "createCohort": "Create New Cohort",
+    "exportData": "Export Student Data",
+    "findStudent": "Find Student",
+    "addStudent": "Add New Student",
+    "viewAllStudents": "View All Students",
+    "manageCohorts": "Manage Cohorts",
+    "scheduleClass": "Schedule Class",
+    "manageCourses": "Manage Courses",
+    "createCourse": "Create New Course",
+    "openSettings": "Open Settings",
+    "logout": "Logout"
+  },
+  "errorBoundary": {
+    "title": "Oops! Something went wrong",
+    "message": "We encountered an unexpected error. Don't worry, our team has been notified.",
+    "reload": "Reload Page",
+    "goHome": "Go to Home",
+    "help": "If this problem persists, please contact support."
+  },
+  "pixPayment": {
+    "title": "Pay with Pix",
+    "instructions": "Scan the QR code below with your banking app to complete the payment.",
+    "note": "Payment is instant and automatic. You will be enrolled immediately after payment.",
+    "copyPaste": "Or copy the Pix code:",
+    "copy": "Copy",
+    "copied": "Pix code copied to clipboard!",
+    "waiting": "Waiting for payment...",
+    "checking": "Checking status...",
+    "completed": "Payment confirmed! Redirecting...",
+    "expires": "Valid until",
+    "cancel": "Cancel Payment",
+    "error": "Payment Error",
+    "retry": "Try Again",
+    "creating": "Creating Pix payment..."
   }
 }

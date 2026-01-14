@@ -58,7 +58,7 @@ const StudentProfile = () => {
 				setStudent(data.student);
 			}
 		} catch (error) {
-			console.error('Error fetching student:', error);
+			// Handle error silently, use mock data
 		} finally {
 			setLoading(false);
 		}

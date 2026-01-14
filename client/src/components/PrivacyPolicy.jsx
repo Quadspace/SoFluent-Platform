@@ -1,12 +1,19 @@
-
 import { assets } from '../assets/assets';
+import { brandAssets } from '../assets/branding/brand-assets';
+import StandardPage from '../utils/pageConsistency';
+import BrandText from './common/BrandText';
 
 export default function PrivacyPolicy() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-cyan-100/70 to-white flex items-start py-16 px-6 md:px-12">
+    <StandardPage
+      seoTitle="Privacy Policy - So Fluent"
+      seoDescription="So Fluent Privacy Policy - How we collect and use your data"
+      background="bg-gradient-to-b from-cyan-100/70 to-white"
+    >
+    <main className="flex items-start py-16 px-6 md:px-12">
       <section className="w-full max-w-4xl mx-auto bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl p-6 md:p-12 border border-gray-100">
         <header className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6">
-          <img src={assets.logo || assets.sketch} alt="Edemy logo" className="w-12 h-12 md:w-14 md:h-14 rounded-md" />
+          <img src={brandAssets.logos.cherry} alt="So Fluent Logo" className="w-12 h-12 md:w-14 md:h-14 rounded-md" />
 
           <div className="flex-1">
             <h1 className="md:text-home-heading-large text-home-heading-small font-extrabold text-gray-800 leading-tight">Privacy Policy</h1>
@@ -86,6 +93,7 @@ export default function PrivacyPolicy() {
           </div>
         </div>
       </section>
-    </main>
+      </main>
+    </StandardPage>
   );
 }

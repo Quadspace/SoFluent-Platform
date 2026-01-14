@@ -12,9 +12,9 @@ import {
   Award,
   Heart
 } from 'lucide-react';
-import Navbar from '../../components/student/Navbar';
-import Footer from '../../components/student/Footer';
 import WorkoutSchedule from '../../components/fluency-fit/WorkoutSchedule';
+import StandardPage from '../../utils/pageConsistency';
+import BrandText from '../../components/common/BrandText';
 
 const FluencyFitAcademy = () => {
   const { t } = useTranslation();
@@ -96,8 +96,11 @@ const FluencyFitAcademy = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar />
+    <StandardPage
+      seoTitle="Fluency Fit Academy - Fitness + English"
+      seoDescription="Join live fitness classes while learning English"
+      background="bg-white"
+    >
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-sofluent-pink/10 via-cyan-100/70 to-sofluent-accent/10 py-20 md:py-32">
@@ -315,9 +318,7 @@ const FluencyFitAcademy = () => {
           </motion.div>
         </div>
       </section>
-
-      <Footer />
-    </div>
+    </StandardPage>
   );
 };
 

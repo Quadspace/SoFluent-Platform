@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import { AppContext } from "../../context/AppContext";
 import Loading from "../../components/student/Loading";
 import { assets } from "../../assets/assets";
@@ -9,14 +9,24 @@ import YouTube from "react-youtube";
 import { toast } from "react-toastify";
 import axios from "axios";
 import Signature from "../../components/Signature";
+import { getProfessionalImage, imageList } from "../../assets/professional-images";
+import { useApi } from "../../hooks/useApi";
+import LoadingButton from "../../components/common/LoadingButton";
+import SkeletonLoader from "../../components/common/SkeletonLoader";
+import StandardPage from "../../utils/pageConsistency";
+import BrandText from "../../components/common/BrandText";
+import BrandButton from "../../components/common/BrandButton";
+import { Sparkles, ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 const CourseDetails = () => {
 	const { id } = useParams();
+	const navigate = useNavigate();
 
-	const [courseData, setCourseData] = useState(null);
 	const [openSections, setOpenSections] = useState({});
 	const [isAlreadyEnrolled, setIsAlreadyEnrolled] = useState(false);
 	const [playerData, setPlayerData] = useState(null);
+	const [enrolling, setEnrolling] = useState(false);
 
 	const {
 		allCourses,
@@ -30,21 +40,30 @@ const CourseDetails = () => {
 		getToken,
 	} = useContext(AppContext);
 
-	const fetcheCourseData = async () => {
-		// const findCourse = allCourses.find((course) => course._id === id);
-		// setCourseData(findCourse);
-
-		try {
-			const { data } = await axios.get(backendUrl + "/api/course/" + id);
-			if (data.success) {
-				setCourseData(data.courseData);
-			} else {
-				toast.error(data.message);
+	// Use useApi hook for course data fetching
+	const { data: courseDataResponse, loading: courseLoading, error: courseError } = useApi(
+		async () => {
+			try {
+				const { data } = await axios.get(backendUrl + "/api/course/" + id);
+				if (!data.success) {
+					throw new Error(data.message || 'Failed to load course');
+				}
+				return data.courseData;
+			} catch (error) {
+				// Better error handling
+				if (error.response?.status === 404) {
+					throw new Error('Course not found');
+				}
+				if (error.response?.status >= 500) {
+					throw new Error('Server error. Please try again later.');
+				}
+				throw error;
 			}
-		} catch (error) {
-			toast.error(error.message);
-		}
-	};
+		},
+		{ autoFetch: true, dependencies: [id] }
+	);
+
+	const courseData = courseDataResponse;
 
 	const enrollCourse = async () => {
 		try {
@@ -55,6 +74,7 @@ const CourseDetails = () => {
 				return toast.warn("Already Enrolled");
 			}
 
+			setEnrolling(true);
 			const token = await getToken();
 			const { data } = await axios.post(
 				backendUrl + "/api/user/purchase",
@@ -69,13 +89,13 @@ const CourseDetails = () => {
 				toast.error(data.message);
 			}
 		} catch (error) {
-			toast.error(error.message);
+			toast.error(error.response?.data?.message || error.message || "Failed to enroll");
+		} finally {
+			setEnrolling(false);
 		}
 	};
 
-	useEffect(() => {
-		fetcheCourseData();
-	}, []);
+	// Course data fetching is handled by useApi hook
 
 	useEffect(() => {
 		if (userData && courseData) {
@@ -87,8 +107,77 @@ const CourseDetails = () => {
 		setOpenSections((prev) => ({ ...prev, [index]: !prev[index] }));
 	};
 
-	return courseData ? (
-		<>
+	// Show loading state
+	if (courseLoading) {
+		return (
+			<StandardPage
+				seoTitle="Loading Course - So Fluent"
+				background="bg-white"
+			>
+				<div className="min-h-screen flex items-center justify-center">
+					<SkeletonLoader />
+				</div>
+			</StandardPage>
+		);
+	}
+
+	// Show error state
+	if (courseError) {
+		return (
+			<StandardPage
+				seoTitle="Course Error - So Fluent"
+				background="bg-white"
+			>
+				<div className="min-h-screen flex items-center justify-center px-4">
+					<div className="text-center max-w-md">
+						<h1 className="text-2xl font-bold text-gray-800 mb-4">Course Not Found</h1>
+						<p className="text-gray-600 mb-6">{courseError}</p>
+						<div className="flex gap-4 justify-center">
+							<BrandButton onClick={() => navigate('/course-list')}>
+								Browse All Courses
+							</BrandButton>
+							<BrandButton variant="outline" onClick={() => navigate(-1)}>
+								Go Back
+							</BrandButton>
+						</div>
+					</div>
+				</div>
+			</StandardPage>
+		);
+	}
+
+	// Show course data
+	if (!courseData) {
+		return (
+			<StandardPage
+				seoTitle="Course Not Found - So Fluent"
+				background="bg-white"
+			>
+				<div className="min-h-screen flex items-center justify-center px-4">
+					<div className="text-center max-w-md">
+						<h1 className="text-2xl font-bold text-gray-800 mb-4">Course Not Available</h1>
+						<p className="text-gray-600 mb-6">This course could not be loaded. Please try again later.</p>
+						<div className="flex gap-4 justify-center">
+							<BrandButton onClick={() => navigate('/course-list')}>
+								Browse All Courses
+							</BrandButton>
+							<BrandButton variant="outline" onClick={() => navigate(-1)}>
+								Go Back
+							</BrandButton>
+						</div>
+					</div>
+				</div>
+			</StandardPage>
+		);
+	}
+
+	return (
+		<StandardPage
+			seoTitle={`${courseData.courseTitle} - So Fluent`}
+			seoDescription={courseData.courseDescription?.slice(0, 160)}
+			background="bg-white"
+			showFooter={true}
+		>
 			<div className="flex md:flex-row flex-col-reverse gap-10 relative items-start justify-between md:px-36 px-8 md:placeholder-teal-300 pt-20 text-left">
 				<div className="absolute top-0 left-0 w-full h-section-height -z-1 bg-gradient-to-b from-cyan-100/70"></div>
 
@@ -259,7 +348,16 @@ const CourseDetails = () => {
 							iframeClassName="w-full aspect-video"
 						/>
 					) : (
-						<img src={courseData.courseThumbnail} alt="courseThumbnail" />
+						<img 
+							src={courseData.courseThumbnail || getProfessionalImage(imageList[Math.floor(Math.random() * imageList.length)], 'large')} 
+							alt="courseThumbnail"
+							onError={(e) => {
+								const fallbackImage = getProfessionalImage(imageList[Math.floor(Math.random() * imageList.length)], 'large');
+								if (fallbackImage) {
+									e.target.src = fallbackImage;
+								}
+							}}
+						/>
 					)}
 
 					<div className="p-5">
@@ -322,7 +420,16 @@ const CourseDetails = () => {
 										(courseData.discount * courseData.coursePrice) / 100 ===
 								  0.00
 								? <p className="md:mt-6 mt-4 w-full py-3 rounded text-center  bg-blue-600 text-white font-medium"> Free </p>
-								: <button onClick={enrollCourse} className="md:mt-6 mt-4 w-full py-3 rounded text-center  bg-blue-600 text-white font-medium"> Enroll Now</button>}
+								: <LoadingButton 
+										onClick={enrollCourse} 
+										loading={enrolling}
+										fullWidth
+										variant="primary"
+										size="large"
+										className="md:mt-6 mt-4"
+									>
+										Enroll Now
+									</LoadingButton>}
 						</div>
 
 						<div >
@@ -346,15 +453,42 @@ const CourseDetails = () => {
 								<li>Quizzes to test your knowledge.</li>
 							</ul>
 						</div>
+
+						{/* Academy CTA Card */}
+						<motion.div
+							initial={{ opacity: 0, y: 20 }}
+							whileInView={{ opacity: 1, y: 0 }}
+							viewport={{ once: true }}
+							transition={{ duration: 0.5 }}
+							className="mt-8 p-6 bg-gradient-to-br from-[#E91E63] via-[#D4AF37] to-[#E91E63] rounded-2xl border-2 border-white/20 shadow-xl"
+						>
+							<div className="flex items-start gap-3 mb-4">
+								<Sparkles className="w-6 h-6 text-white flex-shrink-0 mt-1 animate-pulse" />
+								<div>
+									<h3 className="text-white font-bold text-lg mb-2">
+										Want More? Join Fluency Fit Academy
+									</h3>
+									<p className="text-white/90 text-sm mb-4">
+										Get 3x/week live classes (fitness + English), unlimited course access, and exclusive community.
+									</p>
+									<Link to="/fluency-fit">
+										<BrandButton
+											variant="accent"
+											size="medium"
+											className="bg-white text-[#E91E63] hover:bg-gray-100 font-semibold w-full"
+										>
+											Learn More
+											<ArrowRight className="w-4 h-4 ml-2" />
+										</BrandButton>
+									</Link>
+								</div>
+							</div>
+						</motion.div>
 					</div>
 				</div>
 			</div>
 			<Signature/>
-
-			<Footer />
-		</>
-	) : (
-		<Loading />
+		</StandardPage>
 	);
 };
 

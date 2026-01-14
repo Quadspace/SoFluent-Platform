@@ -1,0 +1,238 @@
+.pix-payment-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.pix-payment-content {
+  background: linear-gradient(135deg, #1A1A2E 0%, #16213E 100%);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pix-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pix-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.pix-amount {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #E91E63;
+  margin: 0;
+}
+
+.pix-instructions {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2rem;
+}
+
+.pix-instructions p {
+  margin-bottom: 0.5rem;
+}
+
+.pix-note {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+}
+
+.pix-qr-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  padding: 1rem;
+  background: white;
+  border-radius: 12px;
+}
+
+.pix-qr-code {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+
+.pix-copy-paste {
+  margin: 2rem 0;
+}
+
+.pix-copy-paste label {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.pix-code-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.pix-code {
+  flex: 1;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: white;
+  font-family: monospace;
+  font-size: 0.75rem;
+  word-break: break-all;
+}
+
+.btn-copy {
+  padding: 0.75rem 1.5rem;
+  background: #E91E63;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-copy:hover {
+  background: #C2185B;
+}
+
+.pix-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+.pix-status.pending {
+  background: rgba(255, 193, 7, 0.1);
+  color: #FFC107;
+}
+
+.pix-status.completed {
+  background: rgba(76, 175, 80, 0.1);
+  color: #4CAF50;
+}
+
+.status-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #FFC107;
+  animation: pulse 2s infinite;
+}
+
+.status-icon {
+  font-size: 1.5rem;
+}
+
+.status-checking {
+  font-size: 0.875rem;
+  opacity: 0.7;
+}
+
+.pix-expiry {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+
+.btn-cancel-payment {
+  width: 100%;
+  padding: 0.75rem;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 1rem;
+}
+
+.btn-cancel-payment:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.pix-loading,
+.pix-error {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(233, 30, 99, 0.2);
+  border-top-color: #E91E63;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.error-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.pix-error h3 {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.pix-error p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+}
+
+.btn-retry,
+.btn-cancel {
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-retry {
+  background: #E91E63;
+  color: white;
+}
+
+.btn-retry:hover {
+  background: #C2185B;
+}
+
+.btn-cancel {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-cancel:hover {
+  background: rgba(255, 255, 255, 0.1);
+}

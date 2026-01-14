@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and private pages
+Disallow: /admin/
+Disallow: /teacher/
+Disallow: /educator/
+Disallow: /dashboard
+Disallow: /profile
+Disallow: /onboarding
+
+# Sitemap
+Sitemap: https://sofluent.ai/sitemap.xml

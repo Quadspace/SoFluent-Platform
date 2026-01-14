@@ -59,6 +59,7 @@ import { Webhook } from "svix";
 import dbAdapter from "../configs/database-adapter.js";
 import Stripe from "stripe";
 import { request, response } from "express";
+import emailService from "../services/emailService.js";
 
 export const clerkWebhooks = async (req, res) => {
     try {
@@ -75,14 +76,40 @@ export const clerkWebhooks = async (req, res) => {
 
         switch (type) {
             case 'user.created': {
+                // Get role from Clerk metadata (if set)
+                const role = data.public_metadata?.role || 'student';
                 const userData = {
                     _id: data.id,
+                    clerkId: data.id,
                     email: data.email_addresses?.[0]?.email_address || "",
                     name: (data.first_name || "") + " " + (data.last_name || ""),
                     imageUrl: data.image_url || "",
+                    role: role // Assign role from Clerk metadata
                 };
                 // Use database adapter
-                await dbAdapter.users.create(userData);
+                const newUser = await dbAdapter.users.create(userData);
+                
+                // Handle referral if referral code was used
+                const referralCode = data.public_metadata?.referralCode || data.unsafe_metadata?.referralCode;
+                if (referralCode) {
+                    try {
+                        const referralRewardService = (await import('../services/referralRewardService.js')).default;
+                        await referralRewardService.handleRefereeSignUp(newUser._id, referralCode);
+                    } catch (refError) {
+                        // Don't fail user creation if referral processing fails
+                    }
+                }
+                
+                // Send welcome email
+                try {
+                    await emailService.sendWelcomeEmail({
+                        email: userData.email,
+                        fullName: userData.name,
+                    });
+                } catch (emailError) {
+                    // Don't fail user creation if email fails
+                }
+                
                 return res.json({ success: true });
             }
 
@@ -239,6 +266,25 @@ export const stripeWebhooks = async (request, response) => {
             // Update purchase status
             purchaseData.status = 'completed';
             await dbAdapter.purchases.save(purchaseData);
+
+            // Send payment confirmation email
+            try {
+                await emailService.sendPaymentConfirmationEmail(userData, {
+                    amount: purchaseData.amount || courseData.price || 0,
+                    currency: purchaseData.currency || 'BRL',
+                    paymentMethod: 'stripe',
+                    paymentId: paymentIntent.id,
+                });
+            } catch (emailError) {
+                // Failed to send payment confirmation email - non-critical
+            }
+
+            // Send course enrollment email
+            try {
+                await emailService.sendCourseEnrollmentEmail(userData, courseData);
+            } catch (emailError) {
+                // Failed to send enrollment email - non-critical
+            }
         } catch (error) {
             if (process.env.NODE_ENV !== 'production') {
                 // Log webhook errors for debugging
@@ -254,7 +300,7 @@ export const stripeWebhooks = async (request, response) => {
             });
 
             if (!session.data.length) {
-                console.error("No session data found for failed payment intent:", paymentIntentId);
+                // No session data found for failed payment intent
                 return;
             }
 

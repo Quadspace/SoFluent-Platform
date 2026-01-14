@@ -1,21 +1,31 @@
 {
   "nav": {
     "home": "Início",
-    "courses": "Cursos",
-    "about": "Sobre",
-    "contact": "Contato",
+    "myEnglishJourney": "My English Journey",
+    "soFluentTalks": "So Fluent Talks",
+    "fluencyFit": "Fluency Fit Academy",
+    "espCourses": "ESP Courses",
+    "courses": "Nossos Cursos",
+    "pricing": "Preços",
+    "about": "Sobre Nós",
+    "contact": "Contate-nos",
+    "members": "Membros",
     "myEnrollments": "Minhas Inscrições",
+    "dashboard": "Dashboard",
     "becomeEducator": "Tornar-se Educador",
     "educatorDashboard": "Painel do Educador",
     "createAccount": "Criar Conta",
+    "login": "Login",
     "goProject": "Go Project"
   },
   "hero": {
     "title": "Ser fluente é ser você!",
     "titleHighlight": "Seja em português, ou em inglês.",
+    "vision": "Comunicar-se com a mesma fluidez e confiança do português",
     "subtitle": "Da base à fluência profissional, preparamos brasileiros para viver, trabalhar e prosperar em cenários globais– com confiança, identidade e resultados reais.",
     "subtitleMobile": "Da base à fluência profissional, preparamos brasileiros para viver, trabalhar e prosperar em cenários globais.",
     "subtitleDesktop": "Da base à fluência profissional, preparamos brasileiros para viver, trabalhar e prosperar em cenários globais– com confiança, identidade e resultados reais.",
+    "diaspora": "Para brasileiros no Brasil, EUA, Canadá, Portugal e além • Níveis Intermediário a Avançado (B1+)",
     "community": "Nossa Comunidade",
     "cta": "Criar Conta Gratuitamente",
     "searchPlaceholder": "Buscar cursos..."
@@ -53,11 +63,20 @@
   "about": {
     "title": "Sobre So Fluent",
     "subtitle": "Seja Você Mesmo em Inglês. Prospere Globalmente.",
+    "team": {
+      "title": "Nossa Equipe",
+      "founder": "Fundadora",
+      "instructor": "Instrutora Principal",
+      "support": "Equipe de Suporte"
+    },
     "founder": {
       "name": "Heloisa",
       "title": "Fundadora e Instrutora Principal",
-      "bio": "Com paixão por fitness e aprendizado de idiomas, Heloisa criou So Fluent para ajudar brasileiros ambiciosos a transformarem suas carreiras através de aprendizado de inglês baseado em ciência. Sua abordagem inovadora combina atividade física com aquisição de idiomas, tornando o aprendizado 20-40% mais eficaz."
+      "bio": "Com paixão por fitness e aprendizado de idiomas, Heloisa criou So Fluent para ajudar brasileiros ambiciosos a transformarem suas carreiras através de aprendizado de inglês baseado em ciência. Sua abordagem inovadora combina atividade física com aquisição de idiomas, tornando o aprendizado 20-40% mais eficaz.",
+      "representation": "Liderando com Representatividade e Excelência",
+      "representationDesc": "Como uma escola liderada por uma mulher negra, a So Fluent valoriza a diversidade e busca refletir isso em suas práticas e materiais, criando um espaço onde todos os brasileiros podem prosperar."
     },
+    "representation": "⭐ Liderada por Mulher Negra",
     "mission": {
       "title": "Nossa Missão",
       "text": "Na So Fluent, acreditamos que aprender inglês deve ser natural, envolvente e eficaz. Nossa abordagem baseada em ciência combina fitness com aprendizado de idiomas, ajudando brasileiros ambiciosos a alcançarem fluência mais rápido enquanto se mantêm saudáveis. Não estamos apenas ensinando inglês - estamos transformando carreiras e vidas."
@@ -338,5 +357,486 @@
     "tagline2": "Fique em Forma. Fique Fluente. Transforme Sua Vida.",
     "effectiveness": "Aprendizado de inglês baseado em ciência que é 20-40% mais eficaz",
     "community": "Junte-se a mais de 300 brasileiros ambiciosos transformando suas carreiras"
+  },
+  "methodology": {
+    "recorded": {
+      "title": "Cursos Gravados",
+      "description": "As lições assíncronas podem ser acessadas a qualquer hora e quantas vezes você precisar. Todas incluem legendas e materiais extras de prática com gabarito, garantindo clareza e autonomia nos estudos."
+    },
+    "live": {
+      "title": "Aulas ao vivo",
+      "description": "A prática em tempo real é essencial. Seja em grupos dinâmicos ou em aulas particulares, você exercita suas habilidades, recebe feedback imediato e mantém a motivação para avançar com segurança."
+    },
+    "virtual": {
+      "title": "Sala de aula virtual",
+      "description": "Nossa plataforma organiza tudo em um só lugar — materiais, lições, recursos adicionais e atividades gamificadas. Além disso, você interage com uma comunidade de alunos que compartilham a mesma jornada de aprendizado."
+    }
+  },
+  "pricing": {
+    "title": "Escolha Seu Plano",
+    "subtitle": "Preços personalizados para seu mercado",
+    "locationNote": "Preços ajustados automaticamente para seu mercado",
+    "mostPopular": "⭐ MAIS POPULAR",
+    "free": {
+      "name": "Gratuito",
+      "feature1": "Acesso à comunidade",
+      "feature2": "1 curso gravado",
+      "feature3": "Recursos de prática",
+      "feature4": "Newsletter semanal",
+      "cta": "Criar Conta Grátis"
+    },
+    "academy": {
+      "name": "Fluency Fit Academy",
+      "feature1": "Tudo do Gratuito, mais:",
+      "feature2": "3x/semana aulas ao vivo (fitness + inglês)",
+      "feature3": "Todos os cursos gravados",
+      "feature4": "Acesso ilimitado à plataforma",
+      "feature5": "Comunidade exclusiva",
+      "feature6": "Certificado de conclusão",
+      "cta": "Começar Agora"
+    },
+    "vip": {
+      "name": "VIP 1:1 Coaching",
+      "feature1": "Tudo do Academy, mais:",
+      "feature2": "4x/mês aulas particulares com Heloisa",
+      "feature3": "Plano de estudos personalizado",
+      "feature4": "Feedback semanal detalhado",
+      "feature5": "Preparação para entrevistas",
+      "feature6": "Suporte prioritário",
+      "cta": "Agendar Consulta"
+    },
+    "faq": {
+      "title": "Perguntas Frequentes",
+      "q1": "Por que os preços são diferentes por região?",
+      "a1": "Ajustamos nossos preços para serem justos e acessíveis em cada mercado, considerando o poder de compra local e condições econômicas.",
+      "q2": "Posso mudar de plano a qualquer momento?",
+      "a2": "Sim! Você pode fazer upgrade ou downgrade a qualquer momento. As mudanças serão aplicadas no próximo ciclo de cobrança.",
+      "q3": "Há período de teste gratuito?",
+      "a3": "Sim! O plano Gratuito oferece acesso completo à comunidade e 1 curso. O Academy oferece 7 dias grátis para novos membros."
+    }
+  },
+  "values": {
+    "title": "NOSSOS VALORES",
+    "subtitle": "Os princípios que guiam cada aspecto do nosso ensino e da nossa comunidade.",
+    "featured": "⭐ Destaque",
+    "cta": "Esses valores não são apenas palavras—eles são a base de tudo que fazemos. Junte-se a uma comunidade que valoriza diversidade, pensamento crítico e pertencimento.",
+    "empathy": {
+      "title": "Empatia",
+      "description": "Cada jornada de aprendizado é única, por isso tratamos nossos alunos com compreensão e respeito."
+    },
+    "representativeness": {
+      "title": "Representatividade",
+      "description": "Como uma escola liderada por uma mulher negra, a So Fluent valoriza a diversidade e busca refletir isso em suas práticas e materiais."
+    },
+    "accountability": {
+      "title": "Accountability",
+      "description": "Compromisso com resultados concretos e responsabilidade em entregar serviços de alta qualidade."
+    },
+    "innovation": {
+      "title": "Inovação",
+      "description": "Integramos ciência, tecnologia e tendências modernas de forma crítica no ensino para criar experiências transformadoras."
+    },
+    "excellence": {
+      "title": "Excelência",
+      "description": "Priorizamos a qualidade em tudo que fazemos, desde a curadoria e criação de materiais até o atendimento ao estudante."
+    },
+    "belonging": {
+      "title": "Pertencimento",
+      "description": "Acreditamos na aprendizagem de inglês que vem da auto reflexão de quem se é no mundo."
+    },
+    "criticalThinking": {
+      "title": "Pensamento Crítico",
+      "description": "Questionar suposições, modismos e mitos linguísticos; contextualizar práticas culturais; refletir sobre poder/privilégio na língua."
+    }
+  },
+  "myEnglishJourney": {
+    "title": "My English Journey",
+    "subtitle": "Inglês Geral do Zero ao Avançado. Um curso estruturado para conduzir você do iniciante ao fluente.",
+    "cta": "Começar Minha Jornada",
+    "preview": "Ver Demonstração",
+    "levelsTitle": "Sua Jornada de Aprendizado",
+    "beginner": "Iniciante",
+    "beginnerDesc": "Do zero ao básico. Construa uma base sólida em inglês.",
+    "beginnerFeature1": "Alfabeto e pronúncia",
+    "beginnerFeature2": "Vocabulário essencial",
+    "beginnerFeature3": "Frases básicas",
+    "beginnerFeature4": "Gramática fundamental",
+    "intermediate": "Intermediário",
+    "intermediateDesc": "De básico a intermediário. Desenvolva confiança e fluência.",
+    "intermediateFeature1": "Conversação prática",
+    "intermediateFeature2": "Vocabulário avançado",
+    "intermediateFeature3": "Gramática complexa",
+    "intermediateFeature4": "Expressões idiomáticas",
+    "advanced": "Avançado",
+    "advancedDesc": "De intermediário a avançado. Alcance fluência profissional.",
+    "advancedFeature1": "Fluência profissional",
+    "advancedFeature2": "Inglês para negócios",
+    "advancedFeature3": "Preparação para entrevistas",
+    "advancedFeature4": "Comunicação avançada",
+    "feature1Title": "Aprendizado Estruturado",
+    "feature1Desc": "Currículo cuidadosamente planejado do zero ao avançado.",
+    "feature2Title": "Estude no Seu Ritmo",
+    "feature2Desc": "Acesso 24/7 para estudar quando e onde quiser.",
+    "feature3Title": "Certificado de Conclusão",
+    "feature3Desc": "Receba um certificado ao completar cada nível.",
+    "finalCta": "Pronto para Começar Sua Jornada?",
+    "finalCtaDesc": "Junte-se a centenas de brasileiros transformando suas carreiras através do inglês.",
+    "startNow": "Começar Agora"
+  },
+  "soFluentTalks": {
+    "title": "So Fluent Talks",
+    "subtitle": "Comunidade Gratuita de Conversação. Sessões ao vivo em 3 níveis para expandir fluência, vocabulário e confiança.",
+    "free": "100% GRATUITO",
+    "joinFree": "Juntar-se Grátis",
+    "levelsTitle": "Escolha Seu Nível",
+    "level1": "Nível 1",
+    "beginner": "Iniciante",
+    "level1Desc": "Para quem está começando. Ambiente seguro e acolhedor para praticar o básico.",
+    "level1Schedule": "Segundas e Quartas, 19h BRT",
+    "level2": "Nível 2",
+    "intermediate": "Intermediário",
+    "level2Desc": "Para quem já tem uma base. Desenvolva fluência e confiança em conversação.",
+    "level2Schedule": "Terças e Quintas, 19h BRT",
+    "level3": "Nível 3",
+    "advanced": "Avançado",
+    "level3Desc": "Para quem quer refinar. Discussões profundas e desafios bilíngues.",
+    "level3Schedule": "Sextas, 19h BRT",
+    "featuresTitle": "O Que Você Ganha",
+    "feature1": "Sessões de conversação ao vivo em grupos pequenos",
+    "feature2": "Ambiente seguro e acolhedor para praticar",
+    "feature3": "Desafios de hábitos bilíngues",
+    "feature4": "Expansão de vocabulário e fluência",
+    "feature5": "Feedback imediato dos instrutores",
+    "feature6": "Comunidade de aprendizes ambiciosos",
+    "finalCta": "Pronto para Praticar?",
+    "finalCtaDesc": "Junte-se à nossa comunidade gratuita e comece a praticar hoje mesmo!",
+    "joinNow": "Juntar-se Agora - Grátis"
+  },
+  "travelEssentials": {
+    "title": "Travel Essentials",
+    "subtitle": "Inglês para Viagens. Um mini curso que prepara você para viagens internacionais com comunicação prática e contextual.",
+    "comingSoon": "EM BREVE",
+    "whatsIncluded": "O Que Está Por Vir",
+    "feature1": "Comunicação prática para viagens",
+    "feature2": "Frases essenciais para aeroportos, hotéis e restaurantes",
+    "feature3": "Vocabulário contextual para situações reais",
+    "feature4": "Dicas culturais e práticas de viagem",
+    "feature5": "Preparação para intercâmbio e mobilidade internacional",
+    "feature6": "Confiança para viajar e se comunicar",
+    "notifyTitle": "Seja Notificado do Lançamento",
+    "notifyDesc": "Queremos te avisar assim que o Travel Essentials estiver disponível. Deixe seu email abaixo!",
+    "emailPlaceholder": "seu@email.com",
+    "notifyMe": "Avisar",
+    "emailRequired": "Por favor, insira seu email",
+    "notifySuccess": "Obrigado! Te avisaremos quando o curso for lançado.",
+    "preview1Title": "Aeroportos",
+    "preview1Desc": "Check-in, segurança, imigração e mais.",
+    "preview2Title": "Hotéis & Restaurantes",
+    "preview2Desc": "Reservas, pedidos e comunicação com serviços.",
+    "preview3Title": "Situações do Dia a Dia",
+    "preview3Desc": "Transporte, compras e interações sociais."
+  },
+  "esp": {
+    "title": "English for Specific Purposes",
+    "subtitle": "Cursos especializados de inglês para profissionais. Aprenda o inglês que você precisa para sua área específica.",
+    "cta": "Ver Cursos Disponíveis",
+    "whatIsESP": {
+      "title": "O Que É ESP?",
+      "description": "English for Specific Purposes (ESP) é uma abordagem de ensino de inglês focada nas necessidades específicas de profissionais em diferentes áreas. Ao invés de aprender inglês geral, você aprende o vocabulário, estruturas e habilidades de comunicação necessárias para sua profissão.",
+      "benefit1Title": "Foco Prático",
+      "benefit1Desc": "Aprenda apenas o que você precisa para sua área profissional.",
+      "benefit2Title": "Aplicação Imediata",
+      "benefit2Desc": "Use o inglês aprendido diretamente no seu trabalho.",
+      "benefit3Title": "Resultados Rápidos",
+      "benefit3Desc": "Veja progresso mais rápido focando em sua área.",
+      "benefit4Title": "Personalizado",
+      "benefit4Desc": "Cursos adaptados às necessidades específicas da sua profissão."
+    },
+    "categoriesTitle": "Categorias Disponíveis",
+    "medical": {
+      "title": "Medical English",
+      "description": "Inglês para profissionais de saúde, médicos, enfermeiros e estudantes de medicina.",
+      "feature1": "Terminologia médica",
+      "feature2": "Comunicação com pacientes",
+      "feature3": "Documentação clínica",
+      "feature4": "Apresentações médicas"
+    },
+    "tech": {
+      "title": "Tech English",
+      "description": "Inglês para desenvolvedores de software, engenheiros e profissionais de tecnologia.",
+      "feature1": "Documentação técnica",
+      "feature2": "Code reviews e discussões",
+      "feature3": "Apresentações técnicas",
+      "feature4": "Terminologia Agile e Scrum"
+    },
+    "business": {
+      "title": "Business English",
+      "description": "Inglês para executivos, gerentes e profissionais de negócios.",
+      "feature1": "Apresentações de negócios",
+      "feature2": "Negociações e reuniões",
+      "feature3": "Email e correspondência",
+      "feature4": "Escrita empresarial"
+    },
+    "academic": {
+      "title": "Academic English",
+      "description": "Inglês para estudantes, pesquisadores e acadêmicos.",
+      "feature1": "Escrita acadêmica",
+      "feature2": "Apresentações de pesquisa",
+      "feature3": "Tese e dissertação",
+      "feature4": "Discussões acadêmicas"
+    },
+    "legal": {
+      "title": "Legal English",
+      "description": "Inglês para advogados, paralegais e profissionais jurídicos.",
+      "feature1": "Terminologia jurídica",
+      "feature2": "Escrita de contratos",
+      "feature3": "Inglês para tribunais",
+      "feature4": "Pesquisa jurídica"
+    },
+    "science": {
+      "title": "Scientific English",
+      "description": "Inglês para cientistas, pesquisadores e profissionais de laboratório.",
+      "feature1": "Escrita científica",
+      "feature2": "Artigos de pesquisa",
+      "feature3": "Relatórios de laboratório",
+      "feature4": "Apresentações científicas"
+    },
+    "custom": {
+      "title": "Precisa de um Curso Personalizado?",
+      "description": "Não encontrou o curso para sua área? Entre em contato e criaremos um curso ESP personalizado para você ou sua empresa.",
+      "cta": "Solicitar Curso Personalizado"
+    }
+  },
+  "criticalThinking": {
+    "badge": "Metodologia",
+    "title": "PENSAMENTO CRÍTICO",
+    "titleHighlight": "NA APRENDIZAGEM",
+    "subtitle": "Não apenas ensinamos inglês - ensinamos você a pensar criticamente sobre a língua, cultura e poder.",
+    "question": {
+      "title": "Questionar Suposições",
+      "description": "Desafiamos mitos linguísticos e modismos. Não aceitamos \"é assim porque sempre foi assim\". Questionamos o porquê e para quem algo é relevante."
+    },
+    "context": {
+      "title": "Contextualizar Práticas Culturais",
+      "description": "Explicamos o contexto histórico e cultural por trás das práticas de língua inglesa. Entendemos de onde vêm as regras e para quem foram criadas."
+    },
+    "power": {
+      "title": "Refletir sobre Poder e Privilégio",
+      "description": "Reconhecemos que a língua carrega poder e privilégio. Discutimos como o inglês pode ser usado para inclusão ou exclusão, e como você pode decidir conscientemente como quer usar o inglês."
+    },
+    "sources": {
+      "title": "Comparar Fontes",
+      "description": "Incentivamos você a comparar diferentes fontes, questionar autoridades linguísticas e formar suas próprias opiniões baseadas em evidências."
+    },
+    "identity": {
+      "title": "Manter Sua Identidade",
+      "description": "Acreditamos que aprender inglês não significa perder sua identidade brasileira. Você pode ser fluente em inglês e ainda ser completamente você mesmo."
+    },
+    "conscious": {
+      "title": "Decisão Consciente",
+      "description": "Você decide conscientemente como quer usar o inglês na sua vida e no trabalho. Não impomos padrões - você escolhe o que funciona para você."
+    },
+    "whyMatters": {
+      "title": "Por Que Isso Importa?",
+      "description": "Aprender inglês sem pensamento crítico pode levar à perda de identidade cultural e à aceitação passiva de normas que não servem aos seus interesses. Com pensamento crítico, você aprende inglês mantendo sua identidade brasileira, questionando o que não faz sentido e decidindo conscientemente como quer usar a língua para seus próprios objetivos."
+    },
+    "cta": "Junte-se a uma comunidade que valoriza pensamento crítico, identidade cultural e aprendizado consciente."
+  },
+  "social": {
+    "createPost": "Criar Post",
+    "text": "Texto",
+    "voice": "Voz",
+    "photo": "Foto",
+    "video": "Vídeo",
+    "shareYourEnglish": "Compartilhe sua prática de inglês em inglês...",
+    "startRecording": "Iniciar Gravação",
+    "stopRecording": "Parar Gravação",
+    "recording": "Gravando...",
+    "audioReady": "Áudio pronto!",
+    "recordAgain": "Gravar novamente",
+    "changeFile": "Trocar arquivo",
+    "selectFile": "Selecionar arquivo",
+    "posting": "Publicando...",
+    "post": "Publicar",
+    "like": "Curtir",
+    "comment": "Comentar",
+    "share": "Compartilhar",
+    "save": "Salvar",
+    "comments": "Comentários",
+    "addComment": "Adicionar um comentário...",
+    "postComment": "Publicar Comentário",
+    "featured": "Destaque por Heloisa",
+    "communityFeed": "Feed da Comunidade",
+    "yourStreak": "Sua Sequência: {{days}} dias",
+    "communityChallenge": "Desafio da Comunidade: Sequência de 30 Dias de Inglês"
+  },
+  "missions": {
+    "title": "Missões do Mundo Real",
+    "subtitle": "Complete desafios diários, envie prova, ganhe XP e suba de nível!",
+    "completed": "Concluído!",
+    "enterProof": "Digite sua prova...",
+    "submit": "Enviar Prova",
+    "submitting": "Enviando...",
+    "xpReward": "+{{xp}} XP",
+    "completionCount": "{{count}} concluídos"
+  },
+  "workouts": {
+    "title": "Workout-to-Fluency™",
+    "subtitle": "Fique em Forma. Fique Fluente. Transforme Sua Vida.",
+    "scienceBacked": "🧠 Baseado em Ciência: 20-40% Aprendizado Mais Rápido",
+    "upcomingClasses": "Aulas Ao Vivo Próximas",
+    "onDemand": "Treinos Sob Demanda",
+    "joinNow": "Entrar Agora",
+    "startsIn": "Começa em breve",
+    "all": "Todos",
+    "hiit": "HIIT",
+    "yoga": "Yoga",
+    "strength": "Força"
+  },
+  "aiLifeMirror": {
+    "title": "Espelho de Vida IA™",
+    "subtitle": "Aprenda inglês da SUA vida. A IA cria lições personalizadas do seu Instagram e LinkedIn.",
+    "myLessons": "Minhas Lições de Vida",
+    "generateMore": "Gerar Mais Lições",
+    "generating": "Gerando...",
+    "noLessons": "Ainda não há lições. Gere sua primeira lição personalizada!",
+    "generateFirst": "Gerar Primeira Lição",
+    "vocabulary": "Vocabulário da SUA vida:",
+    "completed": "Concluído",
+    "complete": "concluído",
+    "startLearning": "Começar a Aprender"
+  },
+  "career": {
+    "title": "Acelerador de Inglês para Carreira™",
+    "subtitle": "Domine o inglês para SUA carreira. Lições personalizadas baseadas no seu perfil do LinkedIn.",
+    "connectLinkedIn": "Conecte Seu LinkedIn",
+    "connectDescription": "Vamos analisar seu cargo, indústria e experiência para criar lições de inglês personalizadas para sua carreira.",
+    "connect": "Conectar LinkedIn",
+    "myLessons": "Minhas Lições de Carreira",
+    "generateLessons": "Gerar Lições",
+    "generating": "Gerando...",
+    "noLessons": "Ainda não há lições de carreira. Gere sua primeira lição personalizada!",
+    "startLearning": "Começar a Aprender"
+  },
+  "conversation": {
+    "title": "Parceiro de Conversa IA",
+    "subtitle": "Pratique inglês 24/7 com IA",
+    "newChat": "Nova Conversa",
+    "typeMessage": "Digite sua mensagem em inglês...",
+    "send": "Enviar"
+  },
+  "pronunciation": {
+    "title": "Coach de Pronúncia IA™",
+    "subtitle": "Receba feedback em tempo real sobre sua pronúncia. A prática leva à perfeição!",
+    "practicePhrase": "Pratique Esta Frase",
+    "enterPhrase": "Digite a frase para praticar...",
+    "startRecording": "Iniciar Gravação",
+    "stopRecording": "Parar Gravação",
+    "analyzing": "Analisando sua pronúncia...",
+    "results": "Seus Resultados",
+    "strengths": "Pontos Fortes:",
+    "improvements": "Áreas para Melhorar:",
+    "recentPractice": "Prática Recente",
+    "attempts": "tentativas"
+  },
+  "studyBuddy": {
+    "title": "Amigo de Estudo Inteligente™",
+    "subtitle": "Nunca esqueça uma palavra novamente. Sistema de repetição espaçada baseado em ciência.",
+    "totalWords": "Total de Palavras",
+    "mastered": "Dominadas",
+    "learning": "Aprendendo",
+    "dueReview": "Revisão Devida",
+    "showAnswer": "Mostrar Resposta",
+    "howWell": "Quão bem você lembrou desta palavra?",
+    "noWords": "Nenhuma palavra para revisar! Ótimo trabalho! 🎉",
+    "addWord": "Adicionar Nova Palavra"
+  },
+  "successStory": {
+    "title": "Gerador de História de Sucesso™",
+    "subtitle": "Celebre sua jornada! Gere um vídeo compartilhável do seu sucesso no aprendizado de inglês.",
+    "createNew": "Criar Sua História de Sucesso",
+    "template": "Modelo",
+    "journey": "Jornada",
+    "achievement": "Conquista",
+    "motivational": "Motivacional",
+    "transformation": "Transformação",
+    "music": "Música",
+    "default": "Padrão",
+    "upbeat": "Animada",
+    "inspiring": "Inspiradora",
+    "generating": "Gerando Sua História...",
+    "generate": "Gerar História de Sucesso",
+    "myStories": "Minhas Histórias de Sucesso",
+    "days": "dias",
+    "courses": "Cursos",
+    "streak": "Sequência",
+    "watch": "Assistir",
+    "share": "Compartilhar"
+  },
+  "dashboard": {
+    "features": {
+      "title": "Suas Ferramentas de Aprendizado",
+      "subtitle": "9 recursos inovadores",
+      "aiLifeMirror": "Espelho de Vida IA",
+      "aiLifeMirrorDesc": "Aprenda do SEU Instagram",
+      "missions": "Missões do Mundo Real",
+      "missionsDesc": "Complete desafios, ganhe XP",
+      "workouts": "Workout-to-Fluency",
+      "workoutsDesc": "Fique em forma, fique fluente",
+      "career": "Acelerador de Carreira",
+      "careerDesc": "Domine inglês profissional",
+      "conversation": "Conversa IA",
+      "conversationDesc": "Pratique 24/7",
+      "pronunciation": "Coach de Pronúncia",
+      "pronunciationDesc": "Perfeccione seu sotaque",
+      "studyBuddy": "Amigo de Estudo",
+      "studyBuddyDesc": "Nunca esqueça uma palavra",
+      "successStory": "História de Sucesso",
+      "successStoryDesc": "Compartilhe sua jornada",
+      "feed": "Feed da Comunidade",
+      "feedDesc": "Conecte-se com aprendizes"
+    }
+  },
+  "nav": {
+    "leaderboard": "Ranking"
+  },
+  "commandPalette": {
+    "searchPlaceholder": "Pesquisar ou digite um comando...",
+    "noResults": "Nenhum resultado encontrado.",
+    "viewAnalytics": "Ver Painel de Análises",
+    "createCohort": "Criar Nova Turma",
+    "exportData": "Exportar Dados dos Alunos",
+    "findStudent": "Encontrar Aluno",
+    "addStudent": "Adicionar Novo Aluno",
+    "viewAllStudents": "Ver Todos os Alunos",
+    "manageCohorts": "Gerenciar Turmas",
+    "scheduleClass": "Agendar Aula",
+    "manageCourses": "Gerenciar Cursos",
+    "createCourse": "Criar Novo Curso",
+    "openSettings": "Abrir Configurações",
+    "logout": "Sair"
+  },
+  "errorBoundary": {
+    "title": "Ops! Algo deu errado",
+    "message": "Encontramos um erro inesperado. Não se preocupe, nossa equipe foi notificada.",
+    "reload": "Recarregar Página",
+    "goHome": "Ir para Início",
+    "help": "Se este problema persistir, entre em contato com o suporte."
+  },
+  "pixPayment": {
+    "title": "Pagar com Pix",
+    "instructions": "Escaneie o QR code abaixo com o aplicativo do seu banco para completar o pagamento.",
+    "note": "O pagamento é instantâneo e automático. Você será matriculado imediatamente após o pagamento.",
+    "copyPaste": "Ou copie o código Pix:",
+    "copy": "Copiar",
+    "copied": "Código Pix copiado para a área de transferência!",
+    "waiting": "Aguardando pagamento...",
+    "checking": "Verificando status...",
+    "completed": "Pagamento confirmado! Redirecionando...",
+    "expires": "Válido até",
+    "cancel": "Cancelar Pagamento",
+    "error": "Erro no Pagamento",
+    "retry": "Tentar Novamente",
+    "creating": "Criando pagamento Pix..."
   }
 }

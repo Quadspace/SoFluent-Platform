@@ -5,6 +5,17 @@ import App from "./App.jsx";
 import { AppContextProvider } from "./context/AppContext.jsx";
 import { BrowserRouter } from "react-router-dom";
 import "./i18n/config"; // Initialize i18n
+import { registerServiceWorker, setupInstallPrompt } from "./utils/registerServiceWorker.js";
+import { initSentry } from "./utils/sentry.js";
+import { initAnalytics } from "./utils/analytics.js";
+import "./utils/performance.js"; // Initialize performance tracking
+import "./styles/theme.css"; // Initialize theme CSS variables
+
+// Initialize error tracking
+initSentry();
+
+// Initialize analytics
+initAnalytics();
 
 // Import your Publishable Key
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
@@ -42,3 +53,9 @@ const renderApp = async () => {
 };
 
 renderApp();
+
+// Register service worker for PWA
+if (typeof window !== 'undefined') {
+	registerServiceWorker();
+	setupInstallPrompt();
+}

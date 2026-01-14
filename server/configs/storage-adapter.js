@@ -1,17 +1,24 @@
 /**
- * Storage Adapter Pattern
+ * Storage Adapter Pattern - Manus-Compatible
  * 
  * This file provides an abstraction layer for file storage.
- * Currently uses Cloudinary, but can be easily adapted for S3
- * when deploying to Manus.
+ * Supports both Cloudinary (development) and S3 (Manus production)
+ * Auto-detects storage type from environment variables
  * 
  * Usage:
- *   import storage from './configs/storage-adapter.js';
- *   const result = await storage.upload(file, folder);
+ *   import storageAdapter from './configs/storage-adapter.js';
+ *   const result = await storageAdapter.upload(file, folder);
+ * 
+ * Environment Variables:
+ *   - STORAGE_TYPE=s3 (or set AWS_ACCESS_KEY_ID) for S3
+ *   - CLOUDINARY_NAME for Cloudinary (default)
  */
 
-// Current implementation: Cloudinary
-import { v2 as cloudinary } from 'cloudinary';
+// Import Manus-compatible adapter
+import storageAdapterManus from './storage-adapter-manus.js';
+
+// Export the Manus-compatible adapter
+export default storageAdapterManus;
 
 const storageAdapter = {
   /**

@@ -1,0 +1,87 @@
+/**
+ * Global Theme CSS Variables
+ * These variables change based on the selected theme
+ */
+
+:root {
+  /* Theme Colors - Default values (can be overridden by ThemeContext) */
+  --theme-primary: #E91E63;
+  --theme-primaryDark: #C2185B;
+  --theme-primaryLight: #F48FB1;
+  --theme-accent: #D4AF37;
+  --theme-accentDark: #B8941A;
+  --theme-accentLight: #E5C866;
+  --theme-background: #FFFFFF;
+  --theme-backgroundDark: #0A0A0A;
+  --theme-backgroundSecondary: #1A1A1A;
+  --theme-text: #1A1A1A;
+  --theme-textSecondary: #666666;
+  --theme-textLight: #FFFFFF;
+
+  /* Brand Colors (always available) */
+  --sofluent-cherry: var(--theme-primary);
+  --sofluent-cherry-dark: var(--theme-primaryDark);
+  --sofluent-cherry-light: var(--theme-primaryLight);
+  --sofluent-gold: var(--theme-accent);
+  --sofluent-gold-dark: var(--theme-accentDark);
+  --sofluent-gold-light: var(--theme-accentLight);
+  --sofluent-black: var(--theme-backgroundSecondary);
+  --sofluent-dark: var(--theme-backgroundDark);
+  --sofluent-white: var(--theme-background);
+  --sofluent-gris: var(--theme-textSecondary);
+
+  /* Text Colors */
+  --text-primary: var(--theme-text);
+  --text-secondary: var(--theme-textSecondary);
+  --text-light: var(--theme-textLight);
+
+  /* Background Colors */
+  --bg-white: var(--theme-background);
+  --bg-dark: var(--theme-backgroundDark);
+  --bg-dark-secondary: var(--theme-backgroundSecondary);
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--theme-primary) 0%, var(--theme-primaryDark) 100%);
+  --gradient-accent: linear-gradient(135deg, var(--theme-accent) 0%, var(--theme-accentDark) 100%);
+}
+
+/* Theme-aware utility classes */
+.bg-theme-primary {
+  background-color: var(--theme-primary);
+}
+
+.bg-theme-accent {
+  background-color: var(--theme-accent);
+}
+
+.bg-theme-background {
+  background-color: var(--theme-background);
+}
+
+.bg-theme-backgroundDark {
+  background-color: var(--theme-backgroundDark);
+}
+
+.text-theme-primary {
+  color: var(--theme-primary);
+}
+
+.text-theme-accent {
+  color: var(--theme-accent);
+}
+
+.text-theme-text {
+  color: var(--theme-text);
+}
+
+.text-theme-textSecondary {
+  color: var(--theme-textSecondary);
+}
+
+.border-theme-primary {
+  border-color: var(--theme-primary);
+}
+
+.border-theme-accent {
+  border-color: var(--theme-accent);
+}

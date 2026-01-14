@@ -14,24 +14,10 @@ const hasClerk = typeof window !== 'undefined' &&
     import.meta.env.VITE_CLERK_PUBLISHABLE_KEY.length > 20;
 
 // Safe hook wrapper for Clerk
+// Note: In Vite, we can't use require(). We'll use a different pattern.
 const useClerkSafe = () => {
-    // Only import Clerk hooks if we have a valid key
-    if (hasClerk) {
-        try {
-            const { useAuth, useUser } = require('@clerk/clerk-react');
-            const auth = useAuth();
-            const { user } = useUser();
-            return {
-                user: user || null,
-                getToken: auth?.getToken || (() => Promise.resolve(null)),
-                isLoaded: auth?.isLoaded || false
-            };
-        } catch (e) {
-            // Clerk not available
-        }
-    }
-    
-    // Preview mode - no Clerk
+    // For now, always return preview mode
+    // Clerk integration should be handled at the component level with proper imports
     return {
         user: null,
         getToken: () => Promise.resolve(null),

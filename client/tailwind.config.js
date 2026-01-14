@@ -1,3 +1,10 @@
+/**
+ * Tailwind CSS Configuration
+ * Imports theme values from theme.ts to ensure single source of truth
+ */
+
+import theme from './src/theme/theme.ts';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -7,26 +14,48 @@ export default {
   theme: {
     extend: {
       colors: {
-        // So Fluent Brand Colors
-        'sf-coral': '#FF6B6B',
-        'sf-coral-light': '#FF8E8E',
-        'sf-coral-dark': '#E85555',
-        'sf-black': '#0A0A0B',
-        'sf-dark': '#111113',
-        'sf-darker': '#0D0D0E',
-        'sf-card': '#1A1A1D',
-        'sf-purple': '#8B5CF6',
-        'sf-blue': '#3B82F6',
-        'sf-green': '#22C55E',
-        'sf-gold': '#F59E0B',
-        // Legacy colors for compatibility
-        'sofluent-pink': '#FF6B6B',
-        'sofluent-dark': '#0A0A0B',
-        'sofluent-accent': '#8B5CF6',
+        // Theme-aware colors (use CSS variables)
+        'sofluent-cherry': 'var(--sofluent-cherry)',
+        'sofluent-cherry-dark': 'var(--sofluent-cherry-dark)',
+        'sofluent-cherry-light': 'var(--sofluent-cherry-light)',
+        'sofluent-gold': 'var(--sofluent-gold)',
+        'sofluent-gold-dark': 'var(--sofluent-gold-dark)',
+        'sofluent-gold-light': 'var(--sofluent-gold-light)',
+        'sofluent-black': 'var(--sofluent-black)',
+        'sofluent-dark': 'var(--sofluent-dark)',
+        'sofluent-white': 'var(--sofluent-white)',
+        'sofluent-gris': 'var(--sofluent-gris)',
+        
+        // Legacy names for compatibility
+        'sofluent-pink': 'var(--sofluent-cherry)',
+        'sofluent-accent': 'var(--sofluent-gold)',
+        
+        // Theme colors (direct access)
+        'theme-primary': 'var(--theme-primary)',
+        'theme-accent': 'var(--theme-accent)',
+        'theme-background': 'var(--theme-background)',
+        'theme-backgroundDark': 'var(--theme-backgroundDark)',
+        'theme-text': 'var(--theme-text)',
+        'theme-textSecondary': 'var(--theme-textSecondary)',
+        
+        // Text colors
+        'text-primary': '#1A1A1A',
+        'text-secondary': '#666666',
+        'text-light': '#999999',
+        'text-white': '#FFFFFF',
+        
+        // Background colors
+        'bg-white': '#FFFFFF',
+        'bg-light': '#F8F9FA',
+        'bg-gray': '#F5F5F5',
+        'bg-dark': '#1A1A1A',
       },
       fontFamily: {
-        'display': ['Sora', 'sans-serif'],
-        'body': ['Inter', 'sans-serif'],
+        // Brand fonts from Brand Kit
+        'display': ['Actay-Regular', 'HelveticaNeueRoman', 'sans-serif'],
+        'body': ['HelveticaNeueRoman', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+        'actay': ['Actay-Regular', 'sans-serif'],
+        'helvetica': ['HelveticaNeueRoman', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
       },
       fontSize: {
         'course-details-heading-small': ['26px', '36px'],
@@ -46,13 +75,14 @@ export default {
       },
       boxShadow: {
         "custom-card": "0px 4px 15px 2px rgba(0,0,0,0.1)",
-        "glow": "0 0 40px rgba(255, 107, 107, 0.3)",
-        "glow-sm": "0 0 20px rgba(255, 107, 107, 0.2)",
+        "glow": "0 0 40px rgba(233, 30, 99, 0.3)",
+        "glow-sm": "0 0 20px rgba(233, 30, 99, 0.2)",
       },
       backgroundImage: {
-        'gradient-coral': 'linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%)',
-        'gradient-dark': 'linear-gradient(180deg, #0A0A0B 0%, #111113 100%)',
-        'gradient-radial': 'radial-gradient(ellipse at center, rgba(255,107,107,0.15) 0%, transparent 70%)',
+        'gradient-primary': 'linear-gradient(135deg, #E91E63 0%, #C2185B 100%)',
+        'gradient-accent': 'linear-gradient(135deg, #D4AF37 0%, #B8941A 100%)',
+        'gradient-dark': 'linear-gradient(180deg, #1A1A1A 0%, #2A2A2A 100%)',
+        'gradient-radial': 'radial-gradient(ellipse at center, rgba(233,30,99,0.15) 0%, transparent 70%)',
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',

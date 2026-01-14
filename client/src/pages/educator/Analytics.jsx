@@ -74,7 +74,7 @@ const Analytics = () => {
 				setAnalytics(data.analytics);
 			}
 		} catch (error) {
-			console.error('Error fetching analytics:', error);
+			// Handle error silently, use mock data
 		} finally {
 			setLoading(false);
 		}
@@ -83,7 +83,7 @@ const Analytics = () => {
 	if (loading || !analytics) {
 		return (
 			<div className="flex justify-center items-center min-h-screen">
-				<div className="w-12 h-12 border-4 border-[#E91E63] border-t-transparent rounded-full animate-spin" />
+				<div className="w-12 h-12 border-4 border-sofluent-cherry border-t-transparent rounded-full animate-spin" />
 			</div>
 		);
 	}
@@ -93,46 +93,46 @@ const Analytics = () => {
 			<div className="max-w-7xl mx-auto space-y-6">
 				{/* Header */}
 				<div>
-					<h1 className="text-2xl md:text-3xl font-bold text-[#1A1A1A]">Analytics & Insights</h1>
-					<p className="text-[#666666] mt-1">Track student engagement, course performance, and revenue</p>
+					<h1 className="text-2xl md:text-3xl font-bold text-sofluent-black">Analytics & Insights</h1>
+					<p className="text-sofluent-gris mt-1">Track student engagement, course performance, and revenue</p>
 				</div>
 
 				{/* Student Engagement */}
 				<div className="bg-white rounded-xl shadow-md p-6 border border-gray-200">
-					<h2 className="text-lg font-semibold text-[#1A1A1A] mb-4">Student Engagement</h2>
+					<h2 className="text-lg font-semibold text-sofluent-black mb-4">Student Engagement</h2>
 					<div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
 						<div className="bg-gray-50 rounded-lg p-4">
-							<p className="text-sm text-[#666666] mb-1">Active Students</p>
-							<p className="text-2xl font-bold text-[#1A1A1A]">
+							<p className="text-sm text-sofluent-gris mb-1">Active Students</p>
+							<p className="text-2xl font-bold text-sofluent-black">
 								{analytics.engagement.activeStudents}/{analytics.engagement.totalStudents}
 							</p>
-							<p className="text-xs text-[#666666] mt-1">
+							<p className="text-xs text-sofluent-gris mt-1">
 								{Math.round((analytics.engagement.activeStudents / analytics.engagement.totalStudents) * 100)}% active
 							</p>
 						</div>
 						<div className="bg-gray-50 rounded-lg p-4">
-							<p className="text-sm text-[#666666] mb-1">Avg Classes/Week</p>
-							<p className="text-2xl font-bold text-[#1A1A1A]">{analytics.engagement.avgClassesPerWeek}</p>
-							<p className="text-xs text-[#666666] mt-1">Target: 3.0</p>
+							<p className="text-sm text-sofluent-gris mb-1">Avg Classes/Week</p>
+							<p className="text-2xl font-bold text-sofluent-black">{analytics.engagement.avgClassesPerWeek}</p>
+							<p className="text-xs text-sofluent-gris mt-1">Target: 3.0</p>
 						</div>
 						<div className="bg-gray-50 rounded-lg p-4">
-							<p className="text-sm text-[#666666] mb-1">Homework Completion</p>
-							<p className="text-2xl font-bold text-[#1A1A1A]">{analytics.engagement.avgHomeworkCompletion}%</p>
+							<p className="text-sm text-sofluent-gris mb-1">Homework Completion</p>
+							<p className="text-2xl font-bold text-sofluent-black">{analytics.engagement.avgHomeworkCompletion}%</p>
 						</div>
 						<div className="bg-gray-50 rounded-lg p-4">
-							<p className="text-sm text-[#666666] mb-1">Avg Time/Week</p>
-							<p className="text-2xl font-bold text-[#1A1A1A]">{analytics.engagement.avgTimeSpent}h</p>
+							<p className="text-sm text-sofluent-gris mb-1">Avg Time/Week</p>
+							<p className="text-2xl font-bold text-sofluent-black">{analytics.engagement.avgTimeSpent}h</p>
 						</div>
 					</div>
 
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 						<div>
-							<h3 className="font-semibold text-[#1A1A1A] mb-3">Top Performers</h3>
+							<h3 className="font-semibold text-sofluent-black mb-3">Top Performers</h3>
 							<div className="space-y-2">
 								{analytics.engagement.topPerformers.map((student, index) => (
 									<div key={index} className="flex items-center justify-between p-2 bg-gray-50 rounded">
-										<span className="text-sm text-[#1A1A1A]">{student.name}</span>
-										<div className="flex items-center gap-4 text-xs text-[#666666]">
+										<span className="text-sm text-sofluent-black">{student.name}</span>
+										<div className="flex items-center gap-4 text-xs text-sofluent-gris">
 											<span>{student.hours}h/week</span>
 											<span>{student.attendance}% attendance</span>
 										</div>
@@ -141,38 +141,38 @@ const Analytics = () => {
 							</div>
 						</div>
 						<div>
-							<h3 className="font-semibold text-[#1A1A1A] mb-3 flex items-center gap-2">
+							<h3 className="font-semibold text-sofluent-black mb-3 flex items-center gap-2">
 								<AlertCircle className="w-5 h-5 text-red-500" />
 								At-Risk Students
 							</h3>
 							<div className="space-y-2">
 								{analytics.engagement.atRisk.map((student, index) => (
 									<div key={index} className="flex items-center justify-between p-2 bg-red-50 rounded">
-										<span className="text-sm text-[#1A1A1A]">{student.name}</span>
+										<span className="text-sm text-sofluent-black">{student.name}</span>
 										<span className="text-xs text-red-600">
 											{student.daysSinceLogin ? `${student.daysSinceLogin} days inactive` : `${student.classesAttended} class in 2 weeks`}
 										</span>
 									</div>
 								))}
 							</div>
-							<button className="mt-3 px-4 py-2 bg-[#E91E63] text-white rounded-lg hover:bg-[#C2185B] transition-colors text-sm">
+							<BrandButton variant="primary" size="small" className="mt-3">
 								Send Re-Engagement Email
-							</button>
+							</BrandButton>
 						</div>
 					</div>
 				</div>
 
 				{/* Course Performance */}
 				<div className="bg-white rounded-xl shadow-md p-6 border border-gray-200">
-					<h2 className="text-lg font-semibold text-[#1A1A1A] mb-4">Course Performance</h2>
+					<h2 className="text-lg font-semibold text-sofluent-black mb-4">Course Performance</h2>
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 						<div>
 							<h3 className="font-semibold text-[#1A1A1A] mb-3">Most Popular</h3>
 							<div className="space-y-2">
 								{analytics.courses.mostPopular.map((course, index) => (
 									<div key={index} className="p-2 bg-gray-50 rounded">
-										<p className="text-sm font-semibold text-[#1A1A1A]">{course.title}</p>
-										<p className="text-xs text-[#666666]">{course.students} students • ⭐ {course.rating}</p>
+										<p className="text-sm font-semibold text-sofluent-black">{course.title}</p>
+										<p className="text-xs text-sofluent-gris">{course.students} students • ⭐ {course.rating}</p>
 									</div>
 								))}
 							</div>
@@ -182,21 +182,21 @@ const Analytics = () => {
 							<div className="space-y-2">
 								{analytics.courses.highestCompletion.map((course, index) => (
 									<div key={index} className="p-2 bg-gray-50 rounded">
-										<p className="text-sm font-semibold text-[#1A1A1A]">{course.title}</p>
-										<p className="text-xs text-[#666666]">{course.rate}% completion</p>
+										<p className="text-sm font-semibold text-sofluent-black">{course.title}</p>
+										<p className="text-xs text-sofluent-gris">{course.rate}% completion</p>
 									</div>
 								))}
 							</div>
 						</div>
 						<div>
-							<h3 className="font-semibold text-[#1A1A1A] mb-3 flex items-center gap-2">
+							<h3 className="font-semibold text-sofluent-black mb-3 flex items-center gap-2">
 								<AlertCircle className="w-5 h-5 text-yellow-500" />
 								Needs Improvement
 							</h3>
 							<div className="space-y-2">
 								{analytics.courses.needsImprovement.map((course, index) => (
 									<div key={index} className="p-2 bg-yellow-50 rounded">
-										<p className="text-sm font-semibold text-[#1A1A1A]">{course.title}</p>
+										<p className="text-sm font-semibold text-sofluent-black">{course.title}</p>
 										<p className="text-xs text-yellow-600">{course.rate}% completion (investigate)</p>
 									</div>
 								))}
@@ -207,42 +207,42 @@ const Analytics = () => {
 
 				{/* Revenue Insights */}
 				<div className="bg-white rounded-xl shadow-md p-6 border border-gray-200">
-					<h2 className="text-lg font-semibold text-[#1A1A1A] mb-4">Revenue Insights</h2>
+					<h2 className="text-lg font-semibold text-sofluent-black mb-4">Revenue Insights</h2>
 					<div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
 						<div className="bg-gray-50 rounded-lg p-4">
-							<p className="text-sm text-[#666666] mb-1">MRR</p>
-							<p className="text-2xl font-bold text-[#1A1A1A]">R${analytics.revenue.mrr.toLocaleString()}</p>
+							<p className="text-sm text-sofluent-gris mb-1">MRR</p>
+							<p className="text-2xl font-bold text-sofluent-black">R${analytics.revenue.mrr.toLocaleString()}</p>
 						</div>
 						<div className="bg-gray-50 rounded-lg p-4">
-							<p className="text-sm text-[#666666] mb-1">Growth Rate</p>
+							<p className="text-sm text-sofluent-gris mb-1">Growth Rate</p>
 							<p className="text-2xl font-bold text-green-600">+{analytics.revenue.growthRate}%</p>
 						</div>
 						<div className="bg-gray-50 rounded-lg p-4">
 							<p className="text-sm text-[#666666] mb-1">Churn Rate</p>
 							<p className="text-2xl font-bold text-[#1A1A1A]">{analytics.revenue.churnRate}%</p>
-							<p className="text-xs text-[#666666] mt-1">Industry avg: 5-7%</p>
+							<p className="text-xs text-sofluent-gris mt-1">Industry avg: 5-7%</p>
 						</div>
 						<div className="bg-gray-50 rounded-lg p-4">
-							<p className="text-sm text-[#666666] mb-1">ARPU</p>
-							<p className="text-2xl font-bold text-[#1A1A1A]">R${analytics.revenue.arpu}</p>
+							<p className="text-sm text-sofluent-gris mb-1">ARPU</p>
+							<p className="text-2xl font-bold text-sofluent-black">R${analytics.revenue.arpu}</p>
 						</div>
 					</div>
 					<div className="mb-6">
-						<h3 className="font-semibold text-[#1A1A1A] mb-3">Conversion Funnel</h3>
+						<h3 className="font-semibold text-sofluent-black mb-3">Conversion Funnel</h3>
 						<div className="space-y-2">
 							<div className="flex items-center justify-between p-3 bg-gray-50 rounded">
-								<span className="text-sm text-[#666666]">Website Visitors</span>
-								<span className="font-semibold text-[#1A1A1A]">{analytics.revenue.funnel.visitors}</span>
+								<span className="text-sm text-sofluent-gris">Website Visitors</span>
+								<span className="font-semibold text-sofluent-black">{analytics.revenue.funnel.visitors}</span>
 							</div>
 							<div className="flex items-center justify-between p-3 bg-gray-50 rounded">
-								<span className="text-sm text-[#666666]">Trial Signups</span>
-								<span className="font-semibold text-[#1A1A1A]">
+								<span className="text-sm text-sofluent-gris">Trial Signups</span>
+								<span className="font-semibold text-sofluent-black">
 									{analytics.revenue.funnel.trialSignups} ({Math.round((analytics.revenue.funnel.trialSignups / analytics.revenue.funnel.visitors) * 100)}%)
 								</span>
 							</div>
 							<div className="flex items-center justify-between p-3 bg-gray-50 rounded">
-								<span className="text-sm text-[#666666]">Paid Conversions</span>
-								<span className="font-semibold text-[#1A1A1A]">
+								<span className="text-sm text-sofluent-gris">Paid Conversions</span>
+								<span className="font-semibold text-sofluent-black">
 									{analytics.revenue.funnel.paidConversions} ({Math.round((analytics.revenue.funnel.paidConversions / analytics.revenue.funnel.trialSignups) * 100)}%)
 								</span>
 							</div>

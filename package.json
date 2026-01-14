@@ -1,0 +1,22 @@
+{
+  "name": "sofluent-platform",
+  "version": "1.0.0",
+  "description": "So Fluent Platform",
+  "scripts": {
+    "optimize-images": "node optimize-images-complete.js",
+    "analyze-images": "node optimize-professional-images.js",
+    "pre-deploy": "node scripts/pre-deploy-check.js",
+    "verify-build": "node scripts/build-production.js",
+    "verify-deployment": "node scripts/verify-deployment.js",
+    "verify-manus": "node scripts/verify-manus-readiness.mjs",
+    "rollback": "node scripts/rollback.js",
+    "deploy:check": "npm run pre-deploy && npm run verify-build",
+    "setup-google": "cd server && npm run setup-google",
+    "verify-google": "cd server && npm run verify-google",
+    "test:pix": "node scripts/test-pix-integration.js",
+    "verify:pix": "node scripts/verify-pix-setup.js"
+  },
+  "dependencies": {
+    "sharp": "^0.33.5"
+  }
+}

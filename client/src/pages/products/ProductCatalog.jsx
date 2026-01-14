@@ -4,8 +4,9 @@ import { motion } from 'framer-motion';
 import ProductCard from '../../components/products/ProductCard';
 import { Filter, Search } from 'lucide-react';
 import axios from 'axios';
-import Footer from '../../components/student/Footer';
-import Navbar from '../../components/student/Navbar';
+import StandardPage from '../../utils/pageConsistency';
+import BrandText from '../../components/common/BrandText';
+import SkeletonLoader from '../../components/common/SkeletonLoader';
 
 /**
  * Product Catalog Page
@@ -46,7 +47,7 @@ const ProductCatalog = () => {
                 setFilteredProducts(data.products || []);
             }
         } catch (error) {
-            console.error('Error fetching products:', error);
+            // Handle error silently, use empty products array
         } finally {
             setLoading(false);
         }
@@ -95,9 +96,22 @@ const ProductCatalog = () => {
         { value: 'business', label: t('products.categories.business', 'Business') }
     ];
 
+    if (loading) {
+        return (
+            <StandardPage
+                loading={true}
+                seoTitle="Products - So Fluent"
+                background="bg-white"
+            />
+        );
+    }
+
     return (
-        <div className="min-h-screen bg-white">
-            <Navbar />
+        <StandardPage
+            seoTitle="Products - So Fluent"
+            seoDescription="Browse all So Fluent products and courses"
+            background="bg-white"
+        >
             
             {/* Hero Section */}
             <section className="bg-gradient-to-br from-sofluent-pink/10 via-white to-sofluent-accent/10 py-16">
@@ -200,9 +214,7 @@ const ProductCatalog = () => {
                     )}
                 </div>
             </section>
-
-            <Footer />
-        </div>
+        </StandardPage>
     );
 };
 

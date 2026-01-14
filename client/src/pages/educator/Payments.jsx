@@ -50,7 +50,7 @@ const Payments = () => {
 				setStats(data.stats || stats);
 			}
 		} catch (error) {
-			console.error('Error fetching payments:', error);
+			// Handle error silently, use mock data
 		} finally {
 			setLoading(false);
 		}

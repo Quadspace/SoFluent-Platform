@@ -1,0 +1,1342 @@
+{
+  "summary": {
+    "total": 60,
+    "success": 60,
+    "failed": 0,
+    "duplicates": 6,
+    "originalSizeMB": "NaN",
+    "optimizedSizeMB": "5.13",
+    "savingsMB": "NaN",
+    "savingsPercent": "NaN"
+  },
+  "results": [
+    {
+      "filename": "IMG_0005(1).jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_0005(1).webp",
+          "sizeKB": "18.99",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_0005(1).webp",
+          "sizeKB": "95.68",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_0005(1).webp",
+          "sizeKB": "203.43",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_0011.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_0011.webp",
+          "sizeKB": "18.83",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_0011.webp",
+          "sizeKB": "97.71",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_0011.webp",
+          "sizeKB": "210.68",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_0025.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_0025.webp",
+          "sizeKB": "17.56",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_0025.webp",
+          "sizeKB": "77.15",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_0025.webp",
+          "sizeKB": "151.45",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_0026.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_0026.webp",
+          "sizeKB": "17.32",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_0026.webp",
+          "sizeKB": "75.89",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_0026.webp",
+          "sizeKB": "149.24",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_0031.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_0031.webp",
+          "sizeKB": "17.34",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_0031.webp",
+          "sizeKB": "80.81",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_0031.webp",
+          "sizeKB": "178.54",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9441.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9441.webp",
+          "sizeKB": "19.69",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9441.webp",
+          "sizeKB": "80.83",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9441.webp",
+          "sizeKB": "154.71",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9443.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9443.webp",
+          "sizeKB": "18.74",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9443.webp",
+          "sizeKB": "75.45",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9443.webp",
+          "sizeKB": "140.50",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9448.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9448.webp",
+          "sizeKB": "20.21",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9448.webp",
+          "sizeKB": "79.53",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9448.webp",
+          "sizeKB": "148.66",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9451.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9451.webp",
+          "sizeKB": "19.85",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9451.webp",
+          "sizeKB": "80.65",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9451.webp",
+          "sizeKB": "151.89",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9456.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9456.webp",
+          "sizeKB": "18.43",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9456.webp",
+          "sizeKB": "72.03",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9456.webp",
+          "sizeKB": "133.28",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9464.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9464.webp",
+          "sizeKB": "17.53",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9464.webp",
+          "sizeKB": "71.26",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9464.webp",
+          "sizeKB": "137.35",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9476.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9476.webp",
+          "sizeKB": "18.46",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9476.webp",
+          "sizeKB": "78.12",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9476.webp",
+          "sizeKB": "150.44",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9487.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9487.webp",
+          "sizeKB": "20.06",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9487.webp",
+          "sizeKB": "84.45",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9487.webp",
+          "sizeKB": "167.45",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9490.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9490.webp",
+          "sizeKB": "19.61",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9490.webp",
+          "sizeKB": "84.27",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9490.webp",
+          "sizeKB": "169.75",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9493.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9493.webp",
+          "sizeKB": "19.52",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9493.webp",
+          "sizeKB": "84.35",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9493.webp",
+          "sizeKB": "170.61",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9504.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9504.webp",
+          "sizeKB": "19.83",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9504.webp",
+          "sizeKB": "84.96",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9504.webp",
+          "sizeKB": "170.27",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9507.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9507.webp",
+          "sizeKB": "20.65",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9507.webp",
+          "sizeKB": "87.70",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9507.webp",
+          "sizeKB": "176.14",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9513.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9513.webp",
+          "sizeKB": "20.08",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9513.webp",
+          "sizeKB": "88.54",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9513.webp",
+          "sizeKB": "174.12",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9519.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9519.webp",
+          "sizeKB": "19.52",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9519.webp",
+          "sizeKB": "81.69",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9519.webp",
+          "sizeKB": "151.28",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9527.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9527.webp",
+          "sizeKB": "20.52",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9527.webp",
+          "sizeKB": "88.16",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9527.webp",
+          "sizeKB": "164.60",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9544.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9544.webp",
+          "sizeKB": "21.31",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9544.webp",
+          "sizeKB": "91.95",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9544.webp",
+          "sizeKB": "176.87",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9566.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9566.webp",
+          "sizeKB": "14.71",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9566.webp",
+          "sizeKB": "68.05",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9566.webp",
+          "sizeKB": "136.55",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9588.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9588.webp",
+          "sizeKB": "21.75",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9588.webp",
+          "sizeKB": "96.26",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9588.webp",
+          "sizeKB": "171.65",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9603.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9603.webp",
+          "sizeKB": "18.63",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9603.webp",
+          "sizeKB": "73.88",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9603.webp",
+          "sizeKB": "129.33",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9604.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9604.webp",
+          "sizeKB": "19.38",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9604.webp",
+          "sizeKB": "75.08",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9604.webp",
+          "sizeKB": "130.56",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9636.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9636.webp",
+          "sizeKB": "19.62",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9636.webp",
+          "sizeKB": "72.45",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9636.webp",
+          "sizeKB": "124.42",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9642.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9642.webp",
+          "sizeKB": "18.27",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9642.webp",
+          "sizeKB": "68.97",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9642.webp",
+          "sizeKB": "115.47",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9644.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9644.webp",
+          "sizeKB": "15.71",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9644.webp",
+          "sizeKB": "61.02",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9644.webp",
+          "sizeKB": "106.01",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9645.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9645.webp",
+          "sizeKB": "16.45",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9645.webp",
+          "sizeKB": "63.48",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9645.webp",
+          "sizeKB": "111.23",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9661.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9661.webp",
+          "sizeKB": "13.52",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9661.webp",
+          "sizeKB": "48.34",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9661.webp",
+          "sizeKB": "83.06",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9668.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9668.webp",
+          "sizeKB": "16.38",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9668.webp",
+          "sizeKB": "67.16",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9668.webp",
+          "sizeKB": "120.13",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9686.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9686.webp",
+          "sizeKB": "17.31",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9686.webp",
+          "sizeKB": "67.94",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9686.webp",
+          "sizeKB": "126.39",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9697.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9697.webp",
+          "sizeKB": "17.43",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9697.webp",
+          "sizeKB": "67.50",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9697.webp",
+          "sizeKB": "125.92",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9699.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9699.webp",
+          "sizeKB": "18.81",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9699.webp",
+          "sizeKB": "73.57",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9699.webp",
+          "sizeKB": "132.16",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9716.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9716.webp",
+          "sizeKB": "16.36",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9716.webp",
+          "sizeKB": "61.66",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9716.webp",
+          "sizeKB": "108.96",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9718.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9718.webp",
+          "sizeKB": "16.97",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9718.webp",
+          "sizeKB": "64.09",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9718.webp",
+          "sizeKB": "113.15",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9727.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9727.webp",
+          "sizeKB": "19.12",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9727.webp",
+          "sizeKB": "66.69",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9727.webp",
+          "sizeKB": "109.74",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9728.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9728.webp",
+          "sizeKB": "20.09",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9728.webp",
+          "sizeKB": "75.70",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9728.webp",
+          "sizeKB": "129.35",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9736.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9736.webp",
+          "sizeKB": "18.14",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9736.webp",
+          "sizeKB": "66.21",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9736.webp",
+          "sizeKB": "113.66",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9773.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9773.webp",
+          "sizeKB": "17.98",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9773.webp",
+          "sizeKB": "62.26",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9773.webp",
+          "sizeKB": "114.59",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9794.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9794.webp",
+          "sizeKB": "16.67",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9794.webp",
+          "sizeKB": "75.58",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9794.webp",
+          "sizeKB": "160.32",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9801.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9801.webp",
+          "sizeKB": "16.38",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9801.webp",
+          "sizeKB": "72.78",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9801.webp",
+          "sizeKB": "151.90",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9823.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9823.webp",
+          "sizeKB": "26.72",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9823.webp",
+          "sizeKB": "103.97",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9823.webp",
+          "sizeKB": "187.45",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9826.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9826.webp",
+          "sizeKB": "17.51",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9826.webp",
+          "sizeKB": "84.01",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9826.webp",
+          "sizeKB": "179.33",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9829.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9829.webp",
+          "sizeKB": "17.57",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9829.webp",
+          "sizeKB": "88.88",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9829.webp",
+          "sizeKB": "184.86",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9842.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9842.webp",
+          "sizeKB": "15.81",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9842.webp",
+          "sizeKB": "71.27",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9842.webp",
+          "sizeKB": "138.33",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9846 (1).jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9846 (1).webp",
+          "sizeKB": "17.81",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9846 (1).webp",
+          "sizeKB": "79.31",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9846 (1).webp",
+          "sizeKB": "157.37",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9859.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9859.webp",
+          "sizeKB": "22.68",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9859.webp",
+          "sizeKB": "110.92",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9859.webp",
+          "sizeKB": "235.77",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9863 (1).jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9863 (1).webp",
+          "sizeKB": "23.94",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9863 (1).webp",
+          "sizeKB": "111.34",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9863 (1).webp",
+          "sizeKB": "231.79",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9869.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9869.webp",
+          "sizeKB": "22.40",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9869.webp",
+          "sizeKB": "98.70",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9869.webp",
+          "sizeKB": "196.23",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9886 (1).jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9886 (1).webp",
+          "sizeKB": "53.69",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9886 (1).webp",
+          "sizeKB": "251.87",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9886 (1).webp",
+          "sizeKB": "479.12",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9913 (1).jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9913 (1).webp",
+          "sizeKB": "31.90",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9913 (1).webp",
+          "sizeKB": "129.53",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9913 (1).webp",
+          "sizeKB": "240.12",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9916.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9916.webp",
+          "sizeKB": "30.41",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9916.webp",
+          "sizeKB": "121.32",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9916.webp",
+          "sizeKB": "218.16",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9920.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9920.webp",
+          "sizeKB": "32.33",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9920.webp",
+          "sizeKB": "130.65",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9920.webp",
+          "sizeKB": "230.18",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9926.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9926.webp",
+          "sizeKB": "32.02",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9926.webp",
+          "sizeKB": "133.31",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9926.webp",
+          "sizeKB": "256.74",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9931.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9931.webp",
+          "sizeKB": "31.14",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9931.webp",
+          "sizeKB": "128.98",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9931.webp",
+          "sizeKB": "241.23",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9937.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9937.webp",
+          "sizeKB": "29.13",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9937.webp",
+          "sizeKB": "136.57",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9937.webp",
+          "sizeKB": "281.81",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9974.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9974.webp",
+          "sizeKB": "25.29",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9974.webp",
+          "sizeKB": "103.46",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9974.webp",
+          "sizeKB": "210.77",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9998.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9998.webp",
+          "sizeKB": "18.55",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9998.webp",
+          "sizeKB": "92.28",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9998.webp",
+          "sizeKB": "199.69",
+          "width": 1200
+        }
+      },
+      "success": true
+    },
+    {
+      "filename": "IMG_9999.jpg",
+      "originalSizeMB": "NaN",
+      "optimized": {
+        "thumbnail": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\thumbnail\\IMG_9999.webp",
+          "sizeKB": "17.42",
+          "width": 300
+        },
+        "medium": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\medium\\IMG_9999.webp",
+          "sizeKB": "82.17",
+          "width": 800
+        },
+        "large": {
+          "path": "C:\\Users\\MichaelSanders\\SoFluent-Platform\\client\\src\\assets\\professional-images\\optimized\\large\\IMG_9999.webp",
+          "sizeKB": "167.51",
+          "width": 1200
+        }
+      },
+      "success": true
+    }
+  ],
+  "duplicates": [
+    "IMG_0005.jpg",
+    "IMG_9846 (2).jpg",
+    "IMG_9846.jpg",
+    "IMG_9863.jpg",
+    "IMG_9886.jpg",
+    "IMG_9913.jpg"
+  ]
+}

@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import { useNavigate } from 'react-router-dom';
-import Footer from './student/Footer';
+import StandardPage from '../utils/pageConsistency';
+import BrandText from './common/BrandText';
 
 const ContactForm = () => {
   const [state, handleSubmit] = useForm("xyzkbwqk");
@@ -18,7 +19,11 @@ const ContactForm = () => {
   }, [state.succeeded, navigate]);
 
   return (
-    <>
+    <StandardPage
+      seoTitle="Contact Us - So Fluent"
+      seoDescription="Get in touch with the So Fluent team"
+      background="bg-white"
+    >
     <div className="mt-20 h-full">
       {state.succeeded ? (
         <p className="text-center text-green-500">
@@ -81,8 +86,7 @@ const ContactForm = () => {
         </form>
       )}
     </div>
-    <Footer/>
-    </>
+    </StandardPage>
   );
 };
 

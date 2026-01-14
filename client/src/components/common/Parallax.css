@@ -1,0 +1,45 @@
+/**
+ * Parallax Styles
+ * Premium parallax scrolling effects
+ */
+
+.parallax-container {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+  perspective: 1000px;
+}
+
+.parallax-layer {
+  position: relative;
+  will-change: transform;
+}
+
+.parallax-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  will-change: transform, opacity;
+}
+
+.parallax-text {
+  will-change: transform, opacity;
+}
+
+/* Smooth scrolling */
+.parallax-container {
+  scroll-behavior: smooth;
+}
+
+/* Performance optimizations */
+.parallax-layer,
+.parallax-background,
+.parallax-text {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}

@@ -1,0 +1,32 @@
+/**
+ * Voice Command Floating Button Styles
+ */
+
+.voice-command-floating {
+  position: fixed;
+  z-index: 9999;
+}
+
+.voice-command-floating-button {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #E91E63 0%, #C2185B 100%);
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(233, 30, 99, 0.4);
+  transition: all 0.3s;
+}
+
+.voice-command-floating-button:hover {
+  box-shadow: 0 6px 20px rgba(233, 30, 99, 0.6);
+  transform: scale(1.05);
+}
+
+.voice-command-floating-button:active {
+  transform: scale(0.95);
+}

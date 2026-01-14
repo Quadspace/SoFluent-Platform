@@ -8,8 +8,9 @@ import axios from 'axios';
 import { useUserSafe } from '../../hooks/useClerkSafe.jsx';
 import { AppContext } from '../../context/AppContext';
 import { toast } from 'react-toastify';
-import Footer from '../../components/student/Footer';
-import Navbar from '../../components/student/Navbar';
+import StandardPage from '../../utils/pageConsistency';
+import BrandText from '../../components/common/BrandText';
+import SkeletonLoader from '../../components/common/SkeletonLoader';
 
 /**
  * Product Detail Page
@@ -117,23 +118,36 @@ const ProductDetail = () => {
 
     if (loading) {
         return (
-            <div className="min-h-screen flex items-center justify-center">
-                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-sofluent-pink"></div>
-            </div>
+            <StandardPage
+                loading={true}
+                seoTitle="Loading Product - So Fluent"
+                background="bg-white"
+            />
         );
     }
 
     if (!product) {
         return (
-            <div className="min-h-screen flex items-center justify-center">
-                <p className="text-xl text-gray-600">{t('products.notFound', 'Product not found')}</p>
-            </div>
+            <StandardPage
+                error="Product not found"
+                seoTitle="Product Not Found - So Fluent"
+                background="bg-white"
+            >
+                <div className="min-h-screen flex items-center justify-center">
+                    <BrandText size="xl" color="secondary">
+                        {t('products.notFound', 'Product not found')}
+                    </BrandText>
+                </div>
+            </StandardPage>
         );
     }
 
     return (
-        <div className="min-h-screen bg-white">
-            <Navbar />
+        <StandardPage
+            seoTitle={`${product.title} - So Fluent`}
+            seoDescription={product.description?.slice(0, 160)}
+            background="bg-white"
+        >
             
             {/* Hero Section */}
             <section className="bg-gradient-to-br from-sofluent-pink/10 via-white to-sofluent-accent/10 py-12">
@@ -406,9 +420,7 @@ const ProductDetail = () => {
                     </div>
                 </div>
             </section>
-
-            <Footer />
-        </div>
+        </StandardPage>
     );
 };
 

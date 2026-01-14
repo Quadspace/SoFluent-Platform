@@ -1,18 +1,47 @@
 import React from 'react'
 import { assets } from '../../assets/assets'
+import { motion } from 'framer-motion'
 
 const Companies = () => {
+  const companies = [
+    { logo: assets.microsoft_logo, name: 'Microsoft' },
+    { logo: assets.walmart_logo, name: 'Walmart' },
+    { logo: assets.accenture_logo, name: 'Accenture' },
+    { logo: assets.adobe_logo, name: 'Adobe' },
+    { logo: assets.paypal_logo, name: 'PayPal' },
+  ]
+
   return (
-    <div className='pt-16'>
-      <p className='text-base text-gray-500'>Trusted by learners from</p>
-      <div className='flex flex-wrap items-center justify-center gap-6 md:gap-16 md:mt-10 mt-5'>
-        <img src={assets.microsoft_logo} alt="microsoft_logo" className='w-20 md:w-28' />
-        <img src={assets.walmart_logo} alt="walmart_logo" className='w-20 md:w-28' />
-        <img src={assets.accenture_logo} alt="accenture_logo" className='w-20 md:w-28' />
-        <img src={assets.adobe_logo} alt="adobe_logo" className='w-20 md:w-28' />
-        <img src={assets.paypal_logo} alt="paypal_logo" className='w-20 md:w-28' />
+    <section className="py-24 bg-[#0A0A0A] border-y border-white/5">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.p 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className='text-center text-base text-gray-500 mb-16 font-bold uppercase tracking-wider'
+        >
+          Trusted by learners from
+        </motion.p>
+        <div className='flex flex-wrap items-center justify-center gap-16'>
+          {companies.map((company, index) => (
+            <motion.div
+              key={company.name}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className="opacity-40 hover:opacity-100 transition-opacity duration-300 grayscale hover:grayscale-0"
+            >
+              <img 
+                src={company.logo} 
+                alt={`${company.name} logo`} 
+                className='w-32 h-auto object-contain'
+              />
+            </motion.div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
 

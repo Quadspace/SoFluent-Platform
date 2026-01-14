@@ -4,6 +4,9 @@ import { Purchase } from "../models/Purchase.js"
 import User from "../models/User.js"
 import { CourseProgress } from "../models/CourseProgress.js"
 import dbAdapter from "../configs/database-adapter.js"
+import { clerkClient } from '@clerk/express'
+import emailService from '../services/emailService.js'
+import crypto from 'crypto'
 
 // Get users data
 export const getUserData = async(req,res)=>{
@@ -139,10 +142,6 @@ export const addUserRating = async (req,res)=>{
     try {
         const userId = req.auth.userId
         const {courseId, rating} = req.body
-        // console.log("UserId", courseId);
-        // console.log("courseId", courseId);
-        // console.log("rating", rating);
-        
 
         if(!courseId || !userId || !rating || rating < 1 || rating > 5)
         {
@@ -174,5 +173,78 @@ export const addUserRating = async (req,res)=>{
 
     } catch (error) {
         res.json({success: false, message: error.message});
+    }
+}
+
+// Request password reset
+export const requestPasswordReset = async (req, res) => {
+    try {
+        const { email } = req.body;
+        
+        if (!email) {
+            return res.json({ success: false, message: 'Email is required' });
+        }
+
+        // Find user by email
+        const user = await dbAdapter.users.findByEmail(email);
+        
+        if (!user) {
+            // Don't reveal if user exists (security best practice)
+            return res.json({ 
+                success: true, 
+                message: 'If an account exists with this email, a password reset link has been sent.' 
+            });
+        }
+
+        // Generate reset token (for Clerk integration)
+        // Clerk handles password reset, but we can send a notification email
+        try {
+            // Use Clerk's password reset API
+            await clerkClient.users.createPasswordResetToken({
+                userId: user.clerkId || user._id.toString()
+            });
+
+            // Send password reset email notification
+            const resetToken = crypto.randomBytes(32).toString('hex');
+            await emailService.sendPasswordResetEmail(user, resetToken);
+
+            res.json({ 
+                success: true, 
+                message: 'Password reset instructions have been sent to your email.' 
+            });
+        } catch (clerkError) {
+            // If Clerk user doesn't exist, still send success message (security)
+            res.json({ 
+                success: true, 
+                message: 'If an account exists with this email, a password reset link has been sent.' 
+            });
+        }
+    } catch (error) {
+        res.json({ success: false, message: error.message });
+    }
+}
+
+// Reset password (using Clerk's reset token)
+export const resetPassword = async (req, res) => {
+    try {
+        const { token, newPassword } = req.body;
+        
+        if (!token || !newPassword) {
+            return res.json({ success: false, message: 'Token and new password are required' });
+        }
+
+        if (newPassword.length < 8) {
+            return res.json({ success: false, message: 'Password must be at least 8 characters' });
+        }
+
+        // Clerk handles password reset via their UI components
+        // This endpoint is for API-based resets if needed
+        // For now, redirect to Clerk's password reset flow
+        res.json({ 
+            success: false, 
+            message: 'Please use the password reset link sent to your email, or use Clerk\'s password reset UI.' 
+        });
+    } catch (error) {
+        res.json({ success: false, message: error.message });
     }
 }

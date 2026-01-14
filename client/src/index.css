@@ -1,39 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* So Fluent Brand Colors - From Brand Kit */
-:root {
-  /* Primary Brand Colors */
-  --sofluent-pink: #E91E63;
-  --sofluent-dark: #1A1A1A;
-  --sofluent-accent: #00BCD4;
-  
-  /* Text Colors */
-  --text-primary: #1A1A1A;
-  --text-secondary: #666666;
-  --text-light: #999999;
-  --text-white: #FFFFFF;
-  
-  /* Background Colors */
-  --bg-white: #FFFFFF;
-  --bg-light: #F8F9FA;
-  --bg-gray: #F5F5F5;
-  
-  /* Gradients */
-  --gradient-primary: linear-gradient(135deg, #E91E63 0%, #C2185B 100%);
-  --gradient-accent: linear-gradient(135deg, #00BCD4 0%, #0097A7 100%);
+/* So Fluent Brand Fonts - From Brand Kit */
+@font-face {
+  font-family: 'Actay-Regular';
+  src: url('../assets/branding/fonts/Actay/Actay-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
+@font-face {
+  font-family: 'Actay-RegularItalic';
+  src: url('../assets/branding/fonts/Actay/Actay-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueRoman';
+  src: url('../assets/branding/fonts/Helvetica/HelveticaNeueRoman.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueBold';
+  src: url('../assets/branding/fonts/Helvetica/HelveticaNeueBold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueMediumItalic';
+  src: url('../assets/branding/fonts/Helvetica/HelveticaNeueMediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* So Fluent Brand Colors - From Brand Kit */
+/* Note: These are now theme-aware via theme.css */
+:root {
+  /* Primary Brand Colors (from logo variants) - Use CSS variables from theme */
+  --sofluent-cherry: var(--theme-primary, #E91E63);      /* Primary brand color - Cherry logo */
+  --sofluent-black: var(--theme-backgroundSecondary, #1A1A1A);       /* Dark color - Black logo */
+  --sofluent-white: var(--theme-background, #FFFFFF);        /* White */
+  --sofluent-gris: var(--theme-textSecondary, #666666);         /* Gray - Gris logo */
+  --sofluent-old-gold: var(--theme-accent, #D4AF37);    /* Gold accent - Old Gold logo */
+  
+  /* Legacy names for compatibility */
+  --sofluent-pink: var(--sofluent-cherry);
+  --sofluent-dark: var(--theme-backgroundDark, #0A0A0A);
+  --sofluent-accent: var(--sofluent-old-gold);
+  
+  /* Text Colors */
+  --text-primary: var(--sofluent-black);
+  --text-secondary: var(--sofluent-gris);
+  --text-light: #999999;
+  --text-white: var(--sofluent-white);
+  
+  /* Background Colors */
+  --bg-white: var(--sofluent-white);
+  --bg-light: #F8F9FA;
+  --bg-gray: #F5F5F5;
+  --bg-dark: var(--sofluent-black);
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--sofluent-cherry) 0%, #C2185B 100%);
+  --gradient-accent: linear-gradient(135deg, var(--sofluent-old-gold) 0%, #B8941A 100%);
+  --gradient-hero: linear-gradient(135deg, var(--sofluent-cherry) 0%, var(--sofluent-old-gold) 50%, var(--sofluent-cherry) 100%);
+}
+
+/* Gradient Animation */
+@keyframes gradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient {
+  animation: gradient 8s ease infinite;
+  background-size: 200% 200%;
+}
+
+/* Typography - Using Brand Fonts */
 * {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'HelveticaNeueRoman', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Space Grotesk', 'Inter', sans-serif;
-  font-weight: 700;
+  font-family: 'Actay-Regular', 'HelveticaNeueRoman', sans-serif;
+  font-weight: 400;
   letter-spacing: -0.02em;
 }
 
@@ -66,7 +131,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--sofluent-pink);
+  background: var(--sofluent-cherry);
 }
 
 /* Button styles */
@@ -88,17 +153,17 @@ body {
 
 .btn-secondary {
   background: transparent;
-  color: var(--sofluent-pink);
+  color: var(--sofluent-cherry);
   font-weight: 600;
   padding: 12px 28px;
   border-radius: 8px;
-  border: 2px solid var(--sofluent-pink);
+  border: 2px solid var(--sofluent-cherry);
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .btn-secondary:hover {
-  background: var(--sofluent-pink);
+  background: var(--sofluent-cherry);
   color: white;
 }
 
@@ -131,10 +196,10 @@ body {
 /* Rich text */
 .rich-text { font-size: 16px; color: var(--text-secondary); line-height: 1.7; }
 .rich-text p { margin-bottom: 16px; }
-.rich-text h1 { font-size: 36px; font-weight: 700; color: var(--text-primary); margin: 32px 0 16px 0; }
-.rich-text h2 { font-size: 28px; font-weight: 700; color: var(--text-primary); margin: 24px 0 12px 0; }
-.rich-text h3 { font-size: 22px; font-weight: 600; color: var(--text-primary); margin: 20px 0 10px 0; }
-.rich-text strong { font-weight: 600; color: var(--text-primary); }
+.rich-text h1 { font-size: 36px; font-weight: 400; color: var(--text-primary); margin: 32px 0 16px 0; font-family: 'Actay-Regular', sans-serif; }
+.rich-text h2 { font-size: 28px; font-weight: 400; color: var(--text-primary); margin: 24px 0 12px 0; font-family: 'Actay-Regular', sans-serif; }
+.rich-text h3 { font-size: 22px; font-weight: 400; color: var(--text-primary); margin: 20px 0 10px 0; font-family: 'Actay-Regular', sans-serif; }
+.rich-text strong { font-weight: 700; color: var(--text-primary); font-family: 'HelveticaNeueBold', sans-serif; }
 .rich-text ul, .rich-text ol { margin-left: 24px; margin-bottom: 16px; }
 .rich-text li { margin-bottom: 8px; }
 
@@ -147,11 +212,11 @@ body {
 }
 
 .nav-link:hover {
-  color: var(--sofluent-pink);
+  color: var(--sofluent-cherry);
 }
 
 .nav-link.active {
-  color: var(--sofluent-pink);
+  color: var(--sofluent-cherry);
 }
 
 .nav-link.active::after {
@@ -161,6 +226,6 @@ body {
   left: 0;
   right: 0;
   height: 2px;
-  background: var(--sofluent-pink);
+  background: var(--sofluent-cherry);
   border-radius: 2px;
 }

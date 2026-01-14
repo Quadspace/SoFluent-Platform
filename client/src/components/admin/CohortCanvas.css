@@ -1,0 +1,172 @@
+/**
+ * Cohort Canvas Styles
+ * Premium drag-and-drop visual organization
+ */
+
+.cohort-canvas {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  background: linear-gradient(135deg, #0A0A0A 0%, #1A1A2E 100%);
+  border-radius: 16px;
+  padding: 40px;
+  overflow: hidden;
+}
+
+.cohort-card {
+  position: absolute;
+  width: 280px;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  cursor: grab;
+  user-select: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid transparent;
+}
+
+.cohort-card:hover {
+  border-color: rgba(255,255,255,0.3);
+}
+
+.cohort-card:active {
+  cursor: grabbing;
+}
+
+.cohort-card-handle {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 4px;
+  cursor: grab;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.cohort-card:hover .cohort-card-handle {
+  opacity: 1;
+}
+
+.cohort-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.cohort-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  flex: 1;
+}
+
+.cohort-status {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+.cohort-status-draft {
+  background: rgba(255,255,255,0.2);
+}
+
+.cohort-status-active {
+  background: rgba(34, 197, 94, 0.3);
+}
+
+.cohort-status-completed {
+  background: rgba(59, 130, 246, 0.3);
+}
+
+.cohort-status-archived {
+  background: rgba(107, 114, 128, 0.3);
+}
+
+.cohort-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.stat svg {
+  color: rgba(255,255,255,0.7);
+}
+
+.stat-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  display: block;
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: rgba(255,255,255,0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
+}
+
+.cohort-schedule {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 8px 12px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.9);
+}
+
+.cohort-schedule svg {
+  color: rgba(255,255,255,0.7);
+}
+
+.cohort-actions {
+  display: flex;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.btn-icon {
+  flex: 1;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.2);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.2s;
+}
+
+.btn-icon:hover {
+  background: rgba(255,255,255,0.3);
+  transform: scale(1.1);
+}
+
+.btn-icon-danger:hover {
+  background: rgba(239, 68, 68, 0.3);
+}

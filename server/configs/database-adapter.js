@@ -1,21 +1,24 @@
 /**
- * Database Adapter Pattern
+ * Database Adapter Pattern - Manus-Compatible
  * 
  * This file provides an abstraction layer for database operations.
- * Currently uses MongoDB/Mongoose, but can be easily adapted for MySQL/TiDB
- * when deploying to Manus.
+ * Supports both MongoDB (development) and MySQL/TiDB (Manus production)
+ * Auto-detects database type from environment variables
  * 
  * Usage:
- *   import db from './configs/database-adapter.js';
- *   const users = await db.users.findAll();
+ *   import dbAdapter from './configs/database-adapter.js';
+ *   const users = await dbAdapter.users.findAll();
+ * 
+ * Environment Variables:
+ *   - DB_TYPE=mysql (or set DB_HOST) for MySQL/TiDB
+ *   - MONGODB_URI for MongoDB (default)
  */
 
-// Current implementation: MongoDB/Mongoose
-import mongoose from 'mongoose';
-import User from '../models/User.js';
-import Course from '../models/Course.js';
-import CourseProgress from '../models/CourseProgress.js';
-import Purchase from '../models/Purchase.js';
+// Import Manus-compatible adapter
+import dbAdapterManus from './database-adapter-manus.js';
+
+// Export the Manus-compatible adapter
+export default dbAdapterManus;
 
 // Database adapter interface
 const dbAdapter = {
@@ -149,6 +152,50 @@ const dbAdapter = {
     }
   },
 
+  // Class operations (for live class scheduling)
+  classes: {
+    findAll: async (filters = {}, options = {}) => {
+      let query = Class.find(filters);
+      if (options.select) {
+        query = query.select(options.select);
+      }
+      if (options.populate) {
+        if (typeof options.populate === 'object' && options.populate.path) {
+          query = query.populate(options.populate);
+        } else if (typeof options.populate === 'string') {
+          query = query.populate(options.populate);
+        }
+      }
+      if (options.sort) {
+        query = query.sort(options.sort);
+      }
+      return await query.exec();
+    },
+    findById: async (id, options = {}) => {
+      let query = Class.findById(id);
+      if (options.populate) {
+        if (typeof options.populate === 'object' && options.populate.path) {
+          query = query.populate(options.populate);
+        } else if (typeof options.populate === 'string') {
+          query = query.populate(options.populate);
+        }
+      }
+      return await query.exec();
+    },
+    create: async (classData) => {
+      return await Class.create(classData);
+    },
+    update: async (id, updateData) => {
+      return await Class.findByIdAndUpdate(id, updateData, { new: true });
+    },
+    save: async (classItem) => {
+      return await classItem.save();
+    },
+    delete: async (id) => {
+      return await Class.findByIdAndDelete(id);
+    }
+  },
+
   // Product operations (for unified product management)
   products: {
     findAll: async (filters = {}, options = {}) => {
@@ -196,6 +243,62 @@ const dbAdapter = {
     }
   },
 
+  // Generic methods for new features (Manus-compliant)
+  // These methods work with any Mongoose model
+  findOne: async (Model, filter, options = {}) => {
+    let query = Model.findOne(filter);
+    if (options.populate) {
+      if (typeof options.populate === 'string') {
+        query = query.populate(options.populate);
+      } else if (Array.isArray(options.populate)) {
+        options.populate.forEach(pop => {
+          query = query.populate(pop);
+        });
+      }
+    }
+    return await query.exec();
+  },
+
+  find: async (Model, filter = {}, options = {}) => {
+    let query = Model.find(filter);
+    if (options.select) {
+      query = query.select(options.select);
+    }
+    if (options.populate) {
+      if (typeof options.populate === 'object' && options.populate.path) {
+        query = query.populate(options.populate);
+      } else if (typeof options.populate === 'string') {
+        query = query.populate(options.populate);
+      } else if (Array.isArray(options.populate)) {
+        options.populate.forEach(pop => {
+          query = query.populate(pop);
+        });
+      }
+    }
+    if (options.sort) {
+      query = query.sort(options.sort);
+    }
+    if (options.limit) {
+      query = query.limit(options.limit);
+    }
+    return await query.exec();
+  },
+
+  updateOne: async (Model, filter, update, options = {}) => {
+    return await Model.findOneAndUpdate(filter, update, { 
+      new: true,
+      ...options 
+    });
+  },
+
+  create: async (Model, data) => {
+    return await Model.create(data);
+  },
+
+  count: async (Model, filter = {}) => {
+    return await Model.countDocuments(filter);
+  },
+
   // Connection management
   connect: async () => {
     const mongoose = await import('mongoose');
@@ -206,6 +309,15 @@ const dbAdapter = {
       }
     });
     await mongoose.default.connect(`${process.env.MONGODB_URI}/SoFluent`);
+    
+    // Create indexes after connection
+    try {
+      const { createIndexes } = await import('../configs/database-indexes.js');
+      await createIndexes();
+    } catch (error) {
+      console.warn('Warning: Could not create database indexes:', error.message);
+      // Don't fail startup if indexes already exist
+    }
   }
 };
 

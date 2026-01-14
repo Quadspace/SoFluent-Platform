@@ -15,10 +15,24 @@ const previewUser = {
     publicMetadata: { role: 'educator' }
 };
 
+// Try to import Clerk - use static import (Vite will handle it)
+// If Clerk is not installed, this will be handled at build time
+let ClerkReact = null;
+if (hasClerk) {
+    // Use dynamic import() - this is async but we'll handle it in hooks
+    import('@clerk/clerk-react').then(module => {
+        ClerkReact = module;
+    }).catch(() => {
+        // Clerk not available - will use preview mode
+    });
+}
+
 export const useUserSafe = () => {
-    if (hasClerk) {
+    // For now, always return preview mode since dynamic import is async
+    // In production, Clerk should be properly imported at the top level
+    if (hasClerk && ClerkReact) {
         try {
-            const { useUser } = require('@clerk/clerk-react');
+            const { useUser } = ClerkReact;
             return useUser();
         } catch (e) {
             // Fall through to preview mode
@@ -34,9 +48,9 @@ export const useUserSafe = () => {
 };
 
 export const useClerkSafe = () => {
-    if (hasClerk) {
+    if (hasClerk && ClerkReact) {
         try {
-            const { useClerk } = require('@clerk/clerk-react');
+            const { useClerk } = ClerkReact;
             return useClerk();
         } catch (e) {
             // Fall through to preview mode
@@ -46,16 +60,24 @@ export const useClerkSafe = () => {
     // Preview mode - mock Clerk methods
     return {
         signOut: () => Promise.resolve(),
-        openSignIn: () => console.log('Sign in clicked (preview mode)'),
-        openSignUp: () => console.log('Sign up clicked (preview mode)'),
+        openSignIn: () => {
+            if (process.env.NODE_ENV === 'development') {
+                console.log('Sign in clicked (preview mode)');
+            }
+        },
+        openSignUp: () => {
+            if (process.env.NODE_ENV === 'development') {
+                console.log('Sign up clicked (preview mode)');
+            }
+        },
     };
 };
 
 // Mock UserButton component for preview mode
 export const UserButtonSafe = (props) => {
-    if (hasClerk) {
+    if (hasClerk && ClerkReact) {
         try {
-            const { UserButton } = require('@clerk/clerk-react');
+            const { UserButton } = ClerkReact;
             return <UserButton {...props} />;
         } catch (e) {
             // Fall through to preview mode

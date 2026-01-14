@@ -28,19 +28,27 @@ export const getCourseId = async(req,res)=>{
     try {
         const courseData = await dbAdapter.courses.findById(id, {populate: {path:'educator'}});
 
-        // Remove lecture Url if previewFrese is false
+        if (!courseData) {
+            return res.status(404).json({success: false, message: 'Course not found'});
+        }
 
-        courseData.courseContent.forEach(chapter => {
-            chapter.chapterContent.forEach(lecture => {
-                if(!lecture.isPreviewFree){
-                    lecture.lectureurl = "";
+        // Remove lecture Url if previewFree is false
+        if (courseData.courseContent && Array.isArray(courseData.courseContent)) {
+            courseData.courseContent.forEach(chapter => {
+                if (chapter.chapterContent && Array.isArray(chapter.chapterContent)) {
+                    chapter.chapterContent.forEach(lecture => {
+                        if(!lecture.isPreviewFree){
+                            lecture.lectureurl = "";
+                        }
+                    });
                 }
-            })
-        })
+            });
+        }
 
         res.json({success:true, courseData})
         
     } catch (error) {
-        res.json({success: false, message:error.message})
+        console.error('Error fetching course:', error);
+        res.status(500).json({success: false, message: error.message || 'Failed to fetch course'})
     }
 }

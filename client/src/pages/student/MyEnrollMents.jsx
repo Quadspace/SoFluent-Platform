@@ -1,11 +1,13 @@
 import React, { useContext, useEffect, useState } from "react";
 import { AppContext } from "../../context/AppContext";
 import { Line } from "rc-progress";
-import Footer from "../../components/student/Footer";
 import { toast } from "react-toastify";
 import axios from "axios";
 import { data } from "react-router-dom";
 import Signature from "../../components/Signature";
+import StandardPage from "../../utils/pageConsistency";
+import BrandText from "../../components/common/BrandText";
+import BrandButton from "../../components/common/BrandButton";
 
 
 
@@ -34,8 +36,6 @@ const MyEnrollMents = () => {
 						{ courseId: course._id },
 						{ headers: { Authorization: `Bearer ${token}` } }
 					);
-					console.log("dta", data.progressData);
-					
 
 					let totalLectures = calculateNoOfLectures(course);
 
@@ -65,10 +65,16 @@ const MyEnrollMents = () => {
   },[enrolledCourses])
 
 	return (
-		<>
-		
+		<StandardPage
+			seoTitle="My Enrollments - So Fluent"
+			seoDescription="View your enrolled courses and track your progress"
+			background="bg-white"
+			showFooter={true}
+		>
 			<div className="md:px-36 px-8 pt-10">
-				<h1 className="text-2xl font-semibold">My EnrollMents</h1>
+				<BrandText as="h1" variant="display" size="3xl" color="primary" weight="semibold" className="mb-10">
+					My Enrollments
+				</BrandText>
 				<table className="md:table-auto table-fixed w-full overflow-hidden border mt-10">
 					<thead className="text-gray-900 border-b border-gray-500/20  text-sm text-left max-sm:hidden">
 						<tr>
@@ -112,17 +118,22 @@ const MyEnrollMents = () => {
 									<span>Lectures</span>
 								</td>
 								<td className="px-3 py-3 max-sm:text-right">
-									<button
-										className="px-3 sm:px-5 py-1.5 sm:py-2 bg-blue-600 max-sm:text-xs text-white"
+									<BrandButton
+										variant={progressArray[index] &&
+										progressArray[index].lectureCompleted /
+											progressArray[index].totalLectures ===
+											1 ? "accent" : "primary"}
+										size="small"
 										onClick={() => navigate("/player/" + course._id)}
+										className="max-sm:text-xs"
 									>
 										{progressArray[index] &&
 										progressArray[index].lectureCompleted /
 											progressArray[index].totalLectures ===
 											1
 											? "Completed"
-											: "On Going"}
-									</button>
+											: "Continue Learning"}
+									</BrandButton>
 								</td>
 							</tr>
 						))}
@@ -130,8 +141,7 @@ const MyEnrollMents = () => {
 				</table>
 			</div>
 			<Signature/>
-			<Footer />
-		</>
+		</StandardPage>
 	);
 };
 

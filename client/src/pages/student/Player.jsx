@@ -223,12 +223,14 @@ import { useParams } from "react-router-dom";
 import { assets } from "../../assets/assets";
 import humanizeDuration from "humanize-duration";
 import YouTube from "react-youtube";
-import Footer from "../../components/student/Footer";
 import Rating from "../../components/student/Rating";
 import axios from "axios";
 import { toast } from "react-toastify";
 import Loading from "../../components/student/Loading";
 import Signature from "../../components/Signature";
+import StandardPage from "../../utils/pageConsistency";
+import BrandText from "../../components/common/BrandText";
+import BrandButton from "../../components/common/BrandButton";
 
 const Player = () => {
 	const {
@@ -406,8 +408,25 @@ const Player = () => {
 		},
 	};
 
-	return courseData ? (
-		<>
+	if (!courseData) {
+		return (
+			<StandardPage
+				loading={true}
+				seoTitle="Loading Course - So Fluent"
+				background="bg-white"
+			>
+				<Loading />
+			</StandardPage>
+		);
+	}
+
+	return (
+		<StandardPage
+			seoTitle={`${courseData.courseTitle} - So Fluent`}
+			seoDescription={courseData.courseDescription?.slice(0, 160)}
+			background="bg-white"
+			showFooter={true}
+		>
 			<div className="p-4 sm:p-10 flex flex-col-reverse md:grid md:grid-cols-2 gap-10 md:px-36">
 				{/* Left column */}
 				<div className="text-gray-800">
@@ -571,10 +590,7 @@ const Player = () => {
 				</div>
 			</div>
 			<Signature/>
-			<Footer />
-		</>
-	) : (
-		<Loading />
+		</StandardPage>
 	);
 };
 

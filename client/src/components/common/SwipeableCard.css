@@ -1,0 +1,65 @@
+/**
+ * Swipeable Card Styles
+ * Premium mobile swipe interactions
+ */
+
+.swipeable-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.swipeable-card {
+  position: relative;
+  z-index: 2;
+  background: white;
+  border-radius: 12px;
+  cursor: grab;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.swipeable-card:active {
+  cursor: grabbing;
+}
+
+.swipe-action {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  z-index: 1;
+  border-radius: 12px;
+  transition: opacity 0.2s;
+}
+
+.swipe-action-right {
+  right: 0;
+  left: auto;
+}
+
+.swipe-action-left {
+  left: 0;
+  right: auto;
+}
+
+.swipe-label {
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .swipeable-card {
+    touch-action: pan-x;
+  }
+}
